@@ -40,11 +40,11 @@ app.use(function(err, req, res, next) {
 });
 
 models.sequelize.sync({force:true}).then(function () {
-  models.artists.create({
+  models.listings.create({
     Name: 'Joshua The Guitar Man'
   })
   .then(() => {
-    models.artists.findAll().then(artists => console.log(artists));
+    models.listings.findAll().then(listings => console.log(listings));
   });
   
 

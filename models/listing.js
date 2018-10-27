@@ -1,14 +1,20 @@
 module.exports = (sequelize, DataTypes) => {
-    const artists = sequelize.define(
-      'artists',
+    const listings = sequelize.define(
+      'listings',
       {
-        ArtistId: {
+        ListingId: {
           type: DataTypes.INTEGER,
           autoIncrement: true,
           primaryKey: true
         },
         Name: DataTypes.STRING
+      },
+      {
+        Position: DataTypes.STRING
+      },
+      { 
+        Location: DataTypes.STRING
       }
     );
-    return artists;
+    return listings;
   };
