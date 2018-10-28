@@ -7,14 +7,10 @@ module.exports = (sequelize, DataTypes) => {
           autoIncrement: true,
           primaryKey: true
         },
-        Name: DataTypes.STRING
-      },
-      {
-        Position: DataTypes.STRING
-      },
-      { 
+        Name: DataTypes.STRING,
+        Position: DataTypes.STRING,
         Location: DataTypes.STRING
-      }
+      },
     );
     return listings;
   };
