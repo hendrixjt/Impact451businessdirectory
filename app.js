@@ -40,14 +40,15 @@ app.use(function(err, req, res, next) {
 });
 
 models.sequelize.sync({force:true}).then(function () {
-  models.artists.create({
-    Name: 'Joshua The Guitar Man'
+  models.listings.create({
+    Name: 'Social Code',
+    Position: 'Frontend Developer',
+    Location: 'Franklin, TN'
   })
   .then(() => {
-    models.artists.findAll().then(artists => console.log(artists));
+    models.listings.findAll().then(listings => console.log(listings));
   });
   
-
   console.log('database synced');
 });
 
