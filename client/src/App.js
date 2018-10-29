@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import Blog from './containers/Blog/Blog';
+import Job from './containers/Job/Job';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Blog />
+        <Job />
       </div>
     );
   }
