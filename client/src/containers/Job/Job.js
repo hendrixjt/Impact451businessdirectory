@@ -8,10 +8,11 @@ import './Job.css';
 
 class Job extends Component {
     state = {
-        posts: []
+        posts: [],
+        selectedPostId: null
     }
     componentDidMount () {
-        axios.get('https://ffn96u87j5ogvehy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com')
+        axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(response => {
             const posts = response.data.slice(0, 4);
             const updatedPosts = posts.map(post => {
@@ -26,7 +27,7 @@ class Job extends Component {
     }
 
     postSelectedHandler = (id) => {
-        this.setState()
+        this.setState({selectedPostId: id})
     }
     render () {
         const posts = this.state.posts.map(post => {
