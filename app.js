@@ -45,37 +45,6 @@ models.sequelize.sync({force:true}).then(function () {
     Name: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN'
-<<<<<<< HEAD
-  },{
-    Name: 'Backstreet Coders',
-    Position: 'Back End Developer',
-    Location: 'Orlando, FL' 
-  },{
-    Name: 'Code of Conduct',
-    Position: 'Junior Developer Full Stack',
-    Location: 'Austin, TN'
-  }, {
-    Name: 'California Code Rush',
-    Position: 'Full Stack Web Developer',
-    Location: 'Sacramento, CA '
-  },{
-    Name: 'iCode',
-    Position: 'Coding Mentor',
-    Location: 'Seattle, WA'
-  },{
-    Name: 'BGHL Inc',
-    Position: 'Front End Developer',
-    Location: 'Las Vegas, NV' 
-  },{
-    Name: 'Code Blazers',
-    Position: 'Senior Web Developer',
-    Location: 'Fargo, ND'
-  },{
-    Name: 'Code Launchers',
-    Position: 'Full Stack Web Developer',
-    Location: 'Roanoke, VA'
-  }])
-=======
   },
   {
     Name: 'Backstreet Coders',
@@ -83,7 +52,6 @@ models.sequelize.sync({force:true}).then(function () {
     Location: 'Orlando, FL'
   }
   ])
->>>>>>> joshuas-playground
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });
