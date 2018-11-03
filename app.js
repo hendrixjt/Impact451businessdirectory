@@ -40,11 +40,18 @@ app.use(function(err, req, res, next) {
 });
 
 models.sequelize.sync({force:true}).then(function () {
-  models.listings.create({
+  models.listings.bulkCreate([
+    {
     Name: 'Social Code',
-    Position: 'Frontend Developer',
+    Position: 'Front End Developer',
     Location: 'Franklin, TN'
-  })
+  },
+  {
+    Name: 'Backstreet Coders',
+    Position: 'Back End Developer',
+    Location: 'Orlando, FL'
+  }
+  ])
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });
