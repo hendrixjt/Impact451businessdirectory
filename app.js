@@ -45,6 +45,7 @@ models.sequelize.sync({force:true}).then(function () {
     Name: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN'
+<<<<<<< HEAD
   },{
     Name: 'Backstreet Coders',
     Position: 'Back End Developer',
@@ -74,6 +75,15 @@ models.sequelize.sync({force:true}).then(function () {
     Position: 'Full Stack Web Developer',
     Location: 'Roanoke, VA'
   }])
+=======
+  },
+  {
+    Name: 'Backstreet Coders',
+    Position: 'Back End Developer',
+    Location: 'Orlando, FL'
+  }
+  ])
+>>>>>>> joshuas-playground
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });

@@ -8,33 +8,27 @@ import './Job.css';
 
 class Job extends Component {
     state = {
-        posts: []
+        posts: [],
+        selectedPostId: null
     }
     componentDidMount () {
-        axios.get('https://ffn96u87j5ogvehy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com')
+        axios.get('/users')
         .then(response => {
-            const posts = response.data.slice(0, 4);
-            const updatedPosts = posts.map(post => {
-                return {
-                    ...post,
-                    author: "Joshua"
-                }
-            })
-            this.setState({posts: updatedPosts});
+            this.setState({posts: response.data});
             // console.log(response);
         });
     }
 
     postSelectedHandler = (id) => {
-        this.setState()
+        this.setState({selectedPostId: id})
     }
     render () {
         const posts = this.state.posts.map(post => {
             return <Post 
-            key={post.id} 
-            title={post.title} 
-            author={post.author}
-            clicked={() => this.postSelectedHandler(post.id)} />;
+            key={post.ListingId} 
+            title={post.Position} 
+            author={post.Location}
+            clicked={() => this.postSelectedHandler(post.ListingId)} />;
         }
 
         );
