@@ -40,11 +40,40 @@ app.use(function(err, req, res, next) {
 });
 
 models.sequelize.sync({force:true}).then(function () {
-  models.listings.create({
+  models.listings.bulkCreate([
+    {
     Name: 'Social Code',
-    Position: 'Frontend Developer',
+    Position: 'Front End Developer',
     Location: 'Franklin, TN'
-  })
+  },{
+    Name: 'Backstreet Coders',
+    Position: 'Back End Developer',
+    Location: 'Orlando, FL'
+  },{
+    Name: 'Code of Conduct',
+    Position: 'Junior Developer Full Stack',
+    Location: 'Austin, TN'
+  }, {
+    Name: 'California Code Rush',
+    Position: 'Full Stack Web Developer',
+    Location: 'Sacramento, CA '
+  },{
+    Name: 'iCode',
+    Position: 'Coding Mentor',
+    Location: 'Seattle, WA'
+  },{
+    Name: 'BGHL Inc',
+    Position: 'Front End Developer',
+    Location: 'Las Vegas, NV' 
+  },{
+    Name: 'Code Blazers',
+    Position: 'Senior Web Developer',
+    Location: 'Fargo, ND'
+  },{
+    Name: 'Code Launchers',
+    Position: 'Full Stack Web Developer',
+    Location: 'Roanoke, VA'
+  }])
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });
