@@ -8,6 +8,7 @@ import Listings from './components/Listings';
 import Gitconnected from './components/Gitconnected';
 
 import Job from './containers/Job/Job';
+import Form from './components/Form/Form';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <Listings/>
         <Gitconnected/>
         <Job />
+        <Form/>
       </div>
     );
   }
