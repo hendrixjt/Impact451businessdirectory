@@ -10,7 +10,8 @@ class Form extends React.Component {
        email:"",
        path:"",
        currentmodule:"",
-       relocate:""
+       relocate:"",
+       message:"",
       };
 
       this.handleChange = this.handleChange.bind(this);
@@ -149,6 +150,18 @@ class Form extends React.Component {
               </div>
             </form>
             </div>
+
+            <div className="field">
+                  <label className="label">Message</label>
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name="message"
+                      value={this.state.message}
+                      onChange={this.handleChange}
+                    />
+                  </div>
+                </div>
 
             <div className="column is-3">
               <pre>
