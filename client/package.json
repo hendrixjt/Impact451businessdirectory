@@ -7,13 +7,17 @@
     "@material-ui/core": "^1.5.1",
     "@material-ui/icons": "^2.0.3",
     "axios": "^0.18.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-player": "^1.6.6",
     "react-reveal": "^1.2.2",
     "react-scripts": "1.1.5",
     "react-scroll": "^1.7.9",
     "react-slick": "^0.23.2",
-    "slick-carousel": "^1.8.1"
+    "react-youtube": "^7.8.0",
+    "redux": "^4.0.1",
+    "slick-carousel": "^1.8.1",
+    "video-react": "^0.13.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -7,7 +7,7 @@ const Featured = () => {
             <Carousel/>
             <div className="git_main">
             <div className="wrapper">
-            Git Growth
+            Git A Job!
             </div>
             </div>
 
