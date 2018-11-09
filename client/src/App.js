@@ -7,7 +7,7 @@ import Gitstarted from './components/Gitstarted';
 import Listings from './components/Listings';
 import Gitconnected from './components/Gitconnected';
 
-import Job from './containers/Job/Job';
+//import Job from './containers/Job/Job';
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
         <Gitstarted/>
         <Listings/>
         <Gitconnected/>
-        <Job />
+        
       </div>
     );
   }
