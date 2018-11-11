@@ -24,6 +24,7 @@ import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import Axios from "axios";
 
+import './CareerForm.css';
 
 
 function rand() {
@@ -75,6 +76,12 @@ const styles = theme => ({
     padding: theme.spacing.unit * 4
   }
 });
+
+const Header={
+  textAlign: "center",
+  color: "grey"
+}
+
 
 
 class CareerForm extends React.Component {
@@ -141,7 +148,7 @@ class CareerForm extends React.Component {
         message: event.target.value
       });
     } else {
-      let temp = this.state.improvements;
+      let temp = this.state.path;
       temp[[name]] = event.target.checked;
       this.setState({
         improvements: temp
@@ -163,8 +170,9 @@ class CareerForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <Grid container spacing={24}>
+      <div style={{marginTop: 200, marginRight: 300, marginLeft:300, marginBottom:300 }}className={classes.root}>
+        <h2 style={Header}>Career Services Form</h2>
+        <Grid container spacing={50}>
           <Grid item xs={12}>
             <Modal
               aria-labelledby="simple-modal-title"
@@ -359,7 +367,6 @@ class CareerForm extends React.Component {
 }
 
 export default withStyles(styles)(CareerForm);
-
 
 
 
