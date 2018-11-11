@@ -23,7 +23,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 
-
+import './Form.css';
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -76,7 +76,7 @@ const styles = theme => ({
 });
 
 
-class CareerForm extends React.Component {
+class Form extends React.Component {
   state = {
     name: "",
     email: "",
@@ -356,9 +356,5 @@ class CareerForm extends React.Component {
   }
 }
 
-export default withStyles(styles)(CareerForm);
+export default withStyles(styles)(Form);
 
-
-
-
-  

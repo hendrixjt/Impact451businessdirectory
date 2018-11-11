@@ -71,4 +71,18 @@ class Header extends Component {
     }
 }
 
+
+
 export default Header;
+// const Header = ({title}) => (
+//     <div>
+//      <a href="/">Home</a>
+//      <a href="/jobs">GitJobs</a>
+//      <a href="/forms">GitForms</a>
+//      <a href="/video">GitInspired</a>
+//      <a href="/connected">GitConnected</a>
+//      <h1>{title}</h1>
+//     </div>
+// );
+
+// export default Header;

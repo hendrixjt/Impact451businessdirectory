@@ -5,6 +5,8 @@ import Post from '../../components/Post/Post';
 import FullPost from '../../components/FullPost/FullPost';
 import NewPost from '../../components/NewPost/NewPost';
 import './Job.css';
+import JobBoard from '../../screens/JobBoard';
+
 
 class Job extends Component {
     state = {
