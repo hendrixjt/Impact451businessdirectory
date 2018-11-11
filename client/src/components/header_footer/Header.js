@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 
+
+//import Featured from './components/featured';
+//import Gitstarted from './components/Gitstarted';
+//import Listings from './components/Listings';
+//import Gitconnected from './components/Gitconnected';
+//import Job from './containers/Job/Job';
+
+//import injectTapEventPlugin from 'react-tap-event-plugin';
+//import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import MenuIcon from '@material-ui/icons/Menu';
-import { IconButton } from '@material-ui/core';
-import SideDrawer from './sidedrawer';
+import Button from '@material-ui/core/Button'; 
+
 
 class Header extends Component {
     
@@ -34,12 +43,12 @@ class Header extends Component {
                
             })
         }
-     render () {
+        render () {
          return (
            <AppBar
            position="fixed"
            style={{
-               backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent',
+             backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent',
                boxShadow: 'none',
                padding: '10px 0px'
            }}
@@ -48,21 +57,20 @@ class Header extends Component {
           
                <div className="header_logo">
                    <div className="font_righteous header_logo_githired"> GitHired </div>
-                   <div className="header_logo_title">Techies at Work> </div>
+                   <div className="header_logo_title">A Website for Coders by Coders! </div>
                </div>
-              
-              <IconButton
+               <div className="header_labels">{this.props.children}</div>
+
+
+             
+              <Button
               aria-label="Menu"
               color="inherit"
               onClick={()=> this.toggleDrawer(true)}
            >
-                <MenuIcon/>
-           </IconButton>
-
-           <SideDrawer
-                open={this.state.drawerOpen}
-                onClose={(value)=> this.toggleDrawer(value)}
-           />
+             </Button>
+          
+           
               
                </Toolbar>
            </AppBar>
