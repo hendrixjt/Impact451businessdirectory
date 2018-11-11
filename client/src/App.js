@@ -23,23 +23,6 @@ import Connection from './screens/Connection';
 
 import './resources/styles.css';
 
-
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App"style={{height:"1500px", background:'cornflowerblue'}}>
-//         <Header/> 
-//         <Featured/>
-//         <Gitstarted/>
-//         <Listings/>
-//         <Gitconnected/>
-//         <Job />
-
-//       </div>
-//     );
-//   }
-// }
 function App() {
   return (
     <BrowserRouter>
