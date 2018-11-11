@@ -18,7 +18,7 @@ import CareerForm from './screens/CareerForm';
 
 
 
-import Job from './containers/Job/Job';
+// import Job from './containers/Job/Job';
 import Connection from './screens/Connection';
 
 import './resources/styles.css';
