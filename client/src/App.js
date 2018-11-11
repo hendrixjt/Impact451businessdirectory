@@ -12,13 +12,13 @@ import Gitstarted from './components/Gitstarted';
 import Listings from './components/Listings';
 import Gitconnected from './components/Gitconnected';
 import Home from './screens/Home';
-import JobBoard from './screens/JobBoard';
+import JobBoard from './screens/JobBoard/JobBoard';
 import CareerForm from './screens/CareerForm';
 
 
 
 
-import Job from './containers/Job/Job';
+// import Job from './containers/Job/Job';
 import Connection from './screens/Connection';
 
 import './resources/styles.css';
@@ -47,7 +47,7 @@ function App() {
         <div className="site">
           <Header2>
             <Link className="nav-button" to="/">Home</Link>
-            <Link className="nav-button" to="/jobBoard">GitSearching</Link>
+            <Link className="nav-button" to="/jobBoard">GitJobListings</Link>
             <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
             <Link className="nav-button" to="/connection">GitConnected</Link>
           </Header2>
