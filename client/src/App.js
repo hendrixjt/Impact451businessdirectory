@@ -22,6 +22,7 @@ import Job from './containers/Job/Job';
 import Connection from './screens/Connection';
 
 import './resources/styles.css';
+import './app.css';
 
 
 
@@ -43,19 +44,22 @@ import './resources/styles.css';
 function App() {
   return (
     <BrowserRouter>
-        <div>
+        <div className="site">
           <Header2>
-        <Link className="nav-button" to="/">Home</Link>
-        <Link className="nav-button" to="/jobBoard">GitSearching</Link>
-        <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
-        <Link className="nav-button" to="/connection">GitConnected</Link>
-        </Header2>
-        <Switch>
-          <Route path="/" exact="true" component={Home} />
-          <Route path="/jobBoard" exact="true" component={JobBoard} />
-          <Route path="/careerForm" exact="true" component={CareerForm} />
-          <Route path="/connection" exact="true" component={Connection} />
-        </Switch>
+            <Link className="nav-button" to="/">Home</Link>
+            <Link className="nav-button" to="/jobBoard">GitSearching</Link>
+            <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
+            <Link className="nav-button" to="/connection">GitConnected</Link>
+          </Header2>
+          <div className="site-main">
+            <Switch>
+              <Route path="/" exact="true" component={Home} />
+              <Route path="/jobBoard" exact="true" component={JobBoard} />
+              <Route path="/careerForm" exact="true" component={CareerForm} />
+              <Route path="/connection" exact="true" component={Connection} />
+            </Switch>
+          </div>
+        
       </div>
     </BrowserRouter>
   );
