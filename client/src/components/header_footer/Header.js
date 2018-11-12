@@ -50,7 +50,7 @@ class Header extends Component {
             
                 <div className="header_logo">
                     <div className="font_righteous header_logo_githired"> GitHired </div>
-                    <div className="header_logo_title">Techies at Work> </div>
+                    <div className="header_logo_title">Techies at Work</div>
                 </div>
                 
                 <IconButton

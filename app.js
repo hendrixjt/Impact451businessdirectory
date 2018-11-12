@@ -42,35 +42,35 @@ app.use(function(err, req, res, next) {
 models.sequelize.sync({force:true}).then(function () {
   models.listings.bulkCreate([
     {
-    Name: 'Social Code',
+    Company: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN'
   },{
-    Name: 'Backstreet Coders',
+    Company: 'Backstreet Coders',
     Position: 'Back End Developer',
     Location: 'Orlando, FL'
   },{
-    Name: 'Code of Conduct',
+    Company: 'Code of Conduct',
     Position: 'Junior Developer Full Stack',
     Location: 'Austin, TN'
   }, {
-    Name: 'California Code Rush',
+    Company: 'California Code Rush',
     Position: 'Full Stack Web Developer',
     Location: 'Sacramento, CA '
   },{
-    Name: 'iCode',
+    Company: 'iCode',
     Position: 'Coding Mentor',
     Location: 'Seattle, WA'
   },{
-    Name: 'BGHL Inc',
+    Company: 'BGHL Inc',
     Position: 'Front End Developer',
     Location: 'Las Vegas, NV' 
   },{
-    Name: 'Code Blazers',
+    Company: 'Code Blazers',
     Position: 'Senior Web Developer',
     Location: 'Fargo, ND'
   },{
-    Name: 'Code Launchers',
+    Company: 'Code Launchers',
     Position: 'Full Stack Web Developer',
     Location: 'Roanoke, VA'
   }])

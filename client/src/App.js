@@ -28,12 +28,12 @@ function App() {
   return (
     <BrowserRouter>
         <div className="site">
-          <Header2>
+          <Header>
             <Link className="nav-button" to="/">Home</Link>
             <Link className="nav-button" to="/jobBoard">GitJobListings</Link>
             <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
             <Link className="nav-button" to="/connection">GitConnected</Link>
-          </Header2>
+          </Header>
           <div className="site-main">
             <Switch>
               <Route path="/" exact="true" component={Home} />
