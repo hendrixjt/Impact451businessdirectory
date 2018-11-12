@@ -198,7 +198,6 @@ class CareerForm extends React.Component {
                   label="Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  autoComplete="name"
                   style={{width:'97%'}}
                   margin="normal"
                   variant="filled"
