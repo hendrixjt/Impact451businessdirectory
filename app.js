@@ -8,6 +8,7 @@ var models = require('./models');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 var app = express();
 
 // view engine setup
@@ -77,8 +78,21 @@ models.sequelize.sync({force:true}).then(function () {
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });
-  
+
+ 
   console.log('database synced');
 });
+models.sequelize.sync({force:true}).then(function () {
+  models.formInput.bulkCreate([
+    {
+    Name: '',
+    Email: '',
+    CurrentModule: ''
+  }])
+  .then(() => {
+    models.formInput.findAll().then(formInput => console.log(formInput));
+  });
 
+  console.log('database is jacked');
+});
 module.exports = app;

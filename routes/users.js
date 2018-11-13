@@ -10,7 +10,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-
+models.formInput.create({
+  Name:  req.body.name,
+  Email: req.body.email,
+  CurrentModule:req.body.currentmodule
+}).then(results => {
+  res.send(results);
+});
 });
 
 module.exports = router;
