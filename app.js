@@ -8,6 +8,7 @@ var models = require('./models');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 var app = express();
 
 // view engine setup
@@ -39,46 +40,55 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-models.sequelize.sync({force:true}).then(function () {
+models.sequelize.sync({alter:true}).then(function () {
+  models.formInput.bulkCreate([
+    {
+    Name: '',
+    Email: '',
+    CurrentModule: ''
+  }])
+  .then(() => {
+    models.formInput.findAll().then(formInput => console.log(formInput));
+  });
+
   models.listings.bulkCreate([
     {
-    Name: 'Social Code',
+    Company: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN'
   },{
-    Name: 'Backstreet Coders',
+    Company: 'Backstreet Coders',
     Position: 'Back End Developer',
     Location: 'Orlando, FL'
   },{
-    Name: 'Code of Conduct',
+    Company: 'Code of Conduct',
     Position: 'Junior Developer Full Stack',
     Location: 'Austin, TN'
   }, {
-    Name: 'California Code Rush',
+    Company: 'California Code Rush',
     Position: 'Full Stack Web Developer',
     Location: 'Sacramento, CA '
   },{
-    Name: 'iCode',
+    Company: 'iCode',
     Position: 'Coding Mentor',
     Location: 'Seattle, WA'
   },{
-    Name: 'BGHL Inc',
+    Company: 'BGHL Inc',
     Position: 'Front End Developer',
     Location: 'Las Vegas, NV' 
   },{
-    Name: 'Code Blazers',
+    Company: 'Code Blazers',
     Position: 'Senior Web Developer',
     Location: 'Fargo, ND'
   },{
-    Name: 'Code Launchers',
+    Company: 'Code Launchers',
     Position: 'Full Stack Web Developer',
     Location: 'Roanoke, VA'
   }])
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
   });
-  
-  console.log('database synced');
-});
 
+  console.log('database is jacked');
+});
 module.exports = app;

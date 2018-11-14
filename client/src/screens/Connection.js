@@ -1,7 +1,4 @@
-// import React from 'react';
-import Header from '../components/header_footer/Header';
-
-import React, { Component } from 'react'
+import { React, Component } from 'react'
 import YouTube from 'react-youtube';
 
 import './Connection.css';

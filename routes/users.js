@@ -10,7 +10,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-  //create a listing
+models.formInput.create({
+  Name:  req.body.name,
+  Email: req.body.email,
+  Relocate: (req.body.relocate === "Yes"),
+  Path: req.body.path,
+  CurrentModule: req.body.currentmodule,
+  Comment: req.body.message
+}).then(results => {
+  res.send(results);
+});
 });
 
 module.exports = router;
