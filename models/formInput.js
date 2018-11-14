@@ -7,9 +7,9 @@ module.exports = (sequelize, DataTypes) => {
           autoIncrement: true,
           primaryKey: true
         },
-        name: DataTypes.STRING,
-        email: DataTypes.STRING,
-        currentmodule: DataTypes.STRING
+        Name: DataTypes.STRING,
+        Email: DataTypes.STRING,
+        CurrentModule: DataTypes.STRING
       },
     );
     return formInput;

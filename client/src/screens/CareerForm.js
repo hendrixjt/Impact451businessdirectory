@@ -160,11 +160,11 @@ class CareerForm extends React.Component {
     e.preventDefault();
 
     this.tempState = this.state;;
-    axios.post('/users/', this.state).then(function (response) {
+    axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
-    //   e.setState({
-    //     messageFromServer: response.data
-    //   });
+      // e.setState({
+      //   messageFromServer: response.data
+      // });
   
      }).catch((error)=> {
        console.log("========errorr===>", error.message)

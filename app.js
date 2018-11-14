@@ -82,7 +82,7 @@ models.sequelize.sync({force:true}).then(function () {
  
   console.log('database synced');
 });
-models.sequelize.sync({force:true}).then(function () {
+models.sequelize.sync({alter:true}).then(function () {
   models.formInput.bulkCreate([
     {
     Name: '',
