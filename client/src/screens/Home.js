@@ -14,6 +14,7 @@ const Home = () => {
                             style={{
                                 height: `${window.innerHeight}px`,
                                 backgroundImage: `url(${testImg})`
+                                
                             }}
                         ></div> 
                         </div>

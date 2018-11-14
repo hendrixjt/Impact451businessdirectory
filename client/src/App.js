@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React  from 'react';
+// import React, {Component} from 'react';
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
 import './resources/styles.css';
 import Header from './components/header_footer/Header';
+import Footer from './components/header_footer/Footer';
+
 import Home from './screens/Home';
 import JobBoard from './screens/JobBoard';
 import CareerForm from './screens/CareerForm';
@@ -21,26 +24,45 @@ import './resources/styles.css';
 
 
 
-
-
 function App() {
   return (
     <BrowserRouter>
         <div>
-          <Header>
-        <Link className="nav-button" to="/">Home</Link>
+        
+        <Header>
+        <i class="fa fa-bars fa-3x"></i>
+        <i class="fa fa-times fa-3x"></i>
+        <div class="header-links">
+        
+         
+            <li>
+        <Link className="nav-button" to="/">Home</Link> 
+            </li>
+            <li>
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
+            </li>
         <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
+            <li>
         <Link className="nav-button" to="/connection">GitConnected</Link>
+            </li>
+
+        </div>
+
         </Header>
+
         <Switch>
-          <Route path="/" exact="true" component={Home} />
+          <Route path="/" exact="true" component={Home} /> 
           <Route path="/jobBoard" exact="true" component={JobBoard} />
           <Route path="/careerForm" exact="true" component={CareerForm} />
           <Route path="/connection" exact="true" component={Connection} />
         </Switch>
-      </div>
+
+        <Footer/>
+       
+        </div>
+    
     </BrowserRouter>
+    
   );
 }
 
