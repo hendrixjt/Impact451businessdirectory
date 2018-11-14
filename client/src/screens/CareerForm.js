@@ -22,6 +22,7 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
+import axios from "axios";
 
 import './CareerForm.css';
 
@@ -159,11 +160,20 @@ class CareerForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+
     console.log(this.state);
 
-    this.tempState = this.state;
-    console.log(this.tempState);
-    this.handleOpenM();
+    //this.tempState = this.state;
+    axios.post('/users', this.state).then(function (response) {
+      console.log("===response=======>", response)
+      // e.setState({
+      //   messageFromServer: response.data
+      // });
+  
+     }).catch((error)=> {
+       console.log("========errorr===>", error.message)
+     });
+    // this.handleOpenM();
   };
 
   render() {
@@ -244,11 +254,11 @@ class CareerForm extends React.Component {
                       Are you willing to relocate?
                     </FormLabel>
                     <RadioGroup
-                      aria-label="gender"
-                      name="gender2"
+                      aria-label="relocate"
+                      name="relocate"
                       className={classes.group}
-                      value={this.state.recommend}
-                      onChange={this.handleChangeR}
+                      value={this.state.relocate}
+                      onChange={this.handleChange}
                     >
                       <FormControlLabel
                         value="Yes"
@@ -275,60 +285,41 @@ class CareerForm extends React.Component {
                   <FormLabel component="legend">
                     Which path are you enrolled in?:
                   </FormLabel>
-                  <FormGroup>
+                  <RadioGroup
+                    name="path"
+                    value={this.state.path}
+                    onChange={this.handleChange}
+                  >
                     <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={this.state.path.javascript}
-                          onChange={this.handleChangeC("javascript")}
-                          value="javascript"
-                        />
-                      }
+                      control={<Radio color="primary" />}
+                      value="javascript"
                       label="JavaScript"
                     />
+
                     <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={this.state.path.java}
-                          onChange={this.handleChangeC("java")}
-                          value="java"
-                        />
-                      }
+                      control={<Radio color="primary" />}
+                      value="java"
                       label="Java"
                     />
+
                     <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={this.state.path.ruby}
-                          onChange={this.handleChangeC("ruby")}
-                          value="ruby"
-                        />
-                      }
+                      control={<Radio color="primary" />}
+                      value="ruby"
                       label="Ruby"
                     />
 
                     <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={this.state.path.datascience}
-                          onChange={this.handleChangeC("datascience")}
-                          value="datascience"
-                        />
-                      }
+                      control={<Radio color="primary" />}
+                      value="datascience"
                       label="Data Science"
                     />
 
                     <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={this.state.path.cybersecurity}
-                          onChange={this.handleChangeC("cybersecurity")}
-                          value="cybersecurity"
-                        />
-                      }
+                      control={<Radio color="primary" />}
+                      value="cybersecurity"
                       label="Cyber Security"
                     />
-                  </FormGroup>
+                  </RadioGroup>
                 </FormControl>
               </Paper>
 

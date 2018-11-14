@@ -27,7 +27,7 @@ class JobBoard extends React.Component {
             })
     }
     render() {
-        const { clicked, author, title} = this.props;
+        const { clicked, title } = this.props;
         const { isLoading, loadedPost } = this.state;
         if(isLoading) {
             return (
