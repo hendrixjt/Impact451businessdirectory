@@ -14,17 +14,6 @@ import Connection from './screens/Connection';
 import './resources/styles.css';
 import './app.css';
 
-//import injectTapEventPlugin from 'react-tap-event-plugin';
-//import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-// import Header2 from './components/header_footer/Header2';
-//import Featured from './components/featured';
-//import Gitstarted from './components/Gitstarted';
-//import Listings from './components/Listings';
-//import Gitconnected from './components/Gitconnected';
-//import Job from './containers/Job/Job';
-
-
-
 function App() {
   return (
     <BrowserRouter>

@@ -27,7 +27,7 @@ class JobBoard extends React.Component {
             })
     }
     render() {
-        const { clicked, author, title } = this.props;
+        const { clicked, author, title} = this.props;
         const { isLoading, loadedPost } = this.state;
         if(isLoading) {
             return (
@@ -44,7 +44,7 @@ class JobBoard extends React.Component {
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>
-                            <h1>{post.Name}</h1>
+                            <h1>{post.Company}</h1>
                             <p>{post.Position}</p>
                             <p>{post.Location}</p>
                         </article> 

@@ -23,6 +23,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 
+import './CareerForm.css';
 
 
 function rand() {
@@ -53,8 +54,9 @@ const styles = theme => ({
     flexWrap: "wrap"
   },
   textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit
+  marginLeft: theme.spacing.unit,
+  marginRight: theme.spacing.unit,
+   
   },
   formControl: {
     margin: theme.spacing.unit,
@@ -74,6 +76,13 @@ const styles = theme => ({
     padding: theme.spacing.unit * 4
   }
 });
+
+const Header={
+  textAlign: "center",
+  color: "grey",
+  
+}
+
 
 
 class CareerForm extends React.Component {
@@ -140,7 +149,7 @@ class CareerForm extends React.Component {
         message: event.target.value
       });
     } else {
-      let temp = this.state.improvements;
+      let temp = this.state.path;
       temp[[name]] = event.target.checked;
       this.setState({
         improvements: temp
@@ -161,8 +170,9 @@ class CareerForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <Grid container spacing={24}>
+      <div style={{marginTop: 200, marginRight: 300, marginLeft:300, marginBottom:300 }}className={classes.root}>
+        <h2 style={Header}>Career Services Form</h2>
+        <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
               aria-labelledby="simple-modal-title"
@@ -184,10 +194,11 @@ class CareerForm extends React.Component {
             <form autoComplete="off">
               <Paper className={classes.paper}>
                 <TextField
-                  id="filled-with-placeholder"
+                  id="filled-name-input"
                   label="Name"
-                  placeholder="Placeholder"
+                  Placeholder="Name"
                   className={classes.textField}
+                  style={{width:'97%'}}
                   margin="normal"
                   variant="filled"
                   name="name"
@@ -203,6 +214,7 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
+                  style={{width:'97%'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
@@ -211,10 +223,10 @@ class CareerForm extends React.Component {
 
               <Paper className={classes.paper}>
                 <TextField
-                  id="filled-with-placeholder"
+                  id="filled-Current Module-input"
                   label="Current Module"
-                  placeholder="Placeholder"
                   className={classes.textField}
+                  style={{width:'97%'}}
                   margin="normal"
                   variant="filled"
                   name="currentmodule"
@@ -222,7 +234,7 @@ class CareerForm extends React.Component {
                 />
               </Paper>
 
-              <Paper item xs={12}>
+              <Paper  item xs={12}>
                 <div>
                   <FormControl
                     component="fieldset"
@@ -255,7 +267,7 @@ class CareerForm extends React.Component {
                 </div>
               </Paper>
 
-              <Paper item xs={12}>
+              <Paper  item xs={12}>
                 <FormControl
                   component="fieldset"
                   className={classes.formControl}
@@ -328,6 +340,7 @@ class CareerForm extends React.Component {
                   rows="8"
                   defaultValue=""
                   className={classes.textField}
+                  style={{width:'97%'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChangeC("message")}
@@ -357,7 +370,6 @@ class CareerForm extends React.Component {
 }
 
 export default withStyles(styles)(CareerForm);
-
 
 
 
