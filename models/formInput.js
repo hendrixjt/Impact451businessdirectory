@@ -9,7 +9,10 @@ module.exports = (sequelize, DataTypes) => {
         },
         Name: DataTypes.STRING,
         Email: DataTypes.STRING,
-        CurrentModule: DataTypes.STRING
+        Relocate: DataTypes.BOOLEAN,
+        Path: DataTypes.STRING,
+        CurrentModule: DataTypes.STRING,
+        Comment: DataTypes.STRING
       },
     );
     return formInput;

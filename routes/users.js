@@ -13,7 +13,10 @@ router.post('/', function(req, res, next) {
 models.formInput.create({
   Name:  req.body.name,
   Email: req.body.email,
-  CurrentModule:req.body.currentmodule
+  Relocate: (req.body.relocate === "Yes"),
+  Path: req.body.path,
+  CurrentModule: req.body.currentmodule,
+  Comment: req.body.message
 }).then(results => {
   res.send(results);
 });

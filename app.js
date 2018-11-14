@@ -40,7 +40,17 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-models.sequelize.sync({force:true}).then(function () {
+models.sequelize.sync({alter:true}).then(function () {
+  models.formInput.bulkCreate([
+    {
+    Name: '',
+    Email: '',
+    CurrentModule: ''
+  }])
+  .then(() => {
+    models.formInput.findAll().then(formInput => console.log(formInput));
+  });
+
   models.listings.bulkCreate([
     {
     Company: 'Social Code',
@@ -77,20 +87,6 @@ models.sequelize.sync({force:true}).then(function () {
   }])
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
-  });
-
- 
-  console.log('database synced');
-});
-models.sequelize.sync({alter:true}).then(function () {
-  models.formInput.bulkCreate([
-    {
-    Name: '',
-    Email: '',
-    CurrentModule: ''
-  }])
-  .then(() => {
-    models.formInput.findAll().then(formInput => console.log(formInput));
   });
 
   console.log('database is jacked');
