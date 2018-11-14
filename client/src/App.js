@@ -8,12 +8,13 @@ import Footer from './components/header_footer/Footer';
 import Home from './screens/Home';
 import JobBoard from './screens/JobBoard/JobBoard';
 import CareerForm from './screens/CareerForm';
+import Connection from './screens/Connection';
+
 import ReactYouTubeExample from './screens/Connection';
 
 
 
 // import Job from './containers/Job/Job';
-import Connection from './screens/Connection';
 
 import './resources/styles.css';
 import './app.css';

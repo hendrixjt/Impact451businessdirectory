@@ -1,10 +1,11 @@
-import { React, Component } from 'react'
+import  React, {Component} from 'react'
+
 import YouTube from 'react-youtube';
 
 import './Connection.css';
 //www.youtube.com/watch?v=HvZU41cFJR0&t=4s
 //const Home = () => <Header title= "Home" />;
-const Connection = () => <div style={{backgroundColor: 'blue'}} />;
+// const Connection = () => <div style={{backgroundColor: 'blue'}} />;
 
 
 
