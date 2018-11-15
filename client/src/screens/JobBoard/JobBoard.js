@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../components/header_footer/Header';
+// import Header from '../../components/header_footer/Header';
 import axios from 'axios';
 
 import './JobBoard.css';

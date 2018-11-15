@@ -1,4 +1,7 @@
 import  React, {Component} from 'react'
+import Fade from 'react-reveal/Fade';
+
+
 
 import YouTube from 'react-youtube';
 
@@ -26,11 +29,13 @@ import './Connection.css';
         };
         const {videoId} = this.props
         return (
+          <div class= "video">
           <YouTube
             videoId={'HvZU41cFJR0'}
             opts={opts}
             onReady={this.videoOnReady}
           />
+          </div>
         );
       }
     }
