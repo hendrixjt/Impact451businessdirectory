@@ -13,16 +13,6 @@ import Connection from './screens/Connection';
 
 import './resources/styles.css';
 
-//import injectTapEventPlugin from 'react-tap-event-plugin';
-//import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-// import Header2 from './components/header_footer/Header2';
-//import Featured from './components/featured';
-//import Gitstarted from './components/Gitstarted';
-//import Listings from './components/Listings';
-//import Gitconnected from './components/Gitconnected';
-//import Job from './containers/Job/Job';
-
-
 
 function App() {
   return (
@@ -31,16 +21,16 @@ function App() {
         
         <Header>
         <i class="fa fa-bars fa-3x"></i>
-        <i class="fa fa-times fa-3x"></i>
+        
         <div class="header-links">
         
          
             <li>
-        <Link className="nav-button" to="/">Home</Link> 
+        <Link className="data-menuanchor" to="/">Home</Link> 
             </li>
-            <li>
+           <li> 
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
-            </li>
+          </li>
         <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
             <li>
         <Link className="nav-button" to="/connection">GitConnected</Link>

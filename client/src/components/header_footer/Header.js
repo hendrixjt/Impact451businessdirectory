@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 
-//import Gitconnected from './components/Gitconnected';
-//import Job from './containers/Job/Job';
-
-//import injectTapEventPlugin from 'react-tap-event-plugin';
-//import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
