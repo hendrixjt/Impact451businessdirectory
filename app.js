@@ -40,7 +40,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-models.sequelize.sync({alter:true}).then(function () {
+models.sequelize.sync({force:true}).then(function () {
   models.formInput.bulkCreate([
     {
     Name: '',

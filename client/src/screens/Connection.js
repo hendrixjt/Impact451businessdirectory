@@ -1,4 +1,4 @@
-import { React, Component } from 'react'
+import React,{ Component } from 'react'
 import YouTube from 'react-youtube';
 
 import './Connection.css';
