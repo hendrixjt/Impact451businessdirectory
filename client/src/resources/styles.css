@@ -16,12 +16,6 @@ body {
 .bck_white {
     background: #ffffff;
 }
-.bck_red {
-    background: #ff4800;
-}
-.bck_yellow {
-    background: #ffa800;
-}
 
 .iconImage {
     width: 20px;
@@ -32,7 +26,9 @@ body {
     width: 900px;
     margin:0 auto;
 }
-
+a {
+    text-decoration: none !important;
+  }
 
 /*====================
         HEADER
@@ -59,50 +55,38 @@ header .header_logo_title {
 .fa-bars {
     display: none !important;
     color: #FF6363;
-    float: right;
+    float: right;    
     padding: 20px;
-    position: fixed;
+    position: fixed; 
     right: 0;
     z-index: 500;
     cursor: pointer;
   }
-  .fa-times {
-    color: #FF6363;
-    float: right;
-    padding: 20px;
-    right: 0;
-    z-index: 600;
-    cursor: pointer;
-  }
-.header-links {
-   position: left;
-   width: 100%;
-   z-index: 500;
-   }
- 
-   .header-links li {
-     color: white;
-     display: inline;
-     /* float: left; */
-     padding: 15px;
-     font-size: 16px;
-   }
- 
-   .header-links a {
-     color: white;
-     -webkit-transition: all 0.2s ease-in;
-   }
- 
-   .header-links a:hover {
-     color: #FF6363 !important;
-   }
+  
+  .header-links {
+    position: left;
+    width: 100%;
+    z-index: 500;
+    }
+  
+    .header-links li {
+      color: white;
+      display: inline;
+      /* float: left; */
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    .header-links a {
+      color: white;
+      -webkit-transition: all 0.2s ease-in;
+    }
+  
+    .header-links a:hover {
+      color: #FF6363 !important;
+    }
+   
 
-
- 
-
-
-
- 
 /*====================
         FOOTER
 ======================*/
@@ -119,149 +103,13 @@ footer .footer_copyright {
     font-size: 18px;
 }
 
-/*====================
-        CARROUSEL
-======================*/
-
-
-.carousel_wrapper {
-    height:700px;
-    overflow: hidden;
-}
-
-.carousel_image {
-    
-    background-size: cover !important;
-}
-
-.git_main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 160px;
-    -webkit-transform: translate(-50%, -50%);  
-    transform: translate(-50%, -50%);   
-    border: 2px solid white;
-}
-
-.git_main .wrapper {
-    border: 2px solid white;
-    height: 121px;
-    margin: 6px;
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    padding: 21px 70px 0px 70px;
-    text-transform: uppercase;
-}
 
 /*====================
-        COUNTDOWN
+        HOME
 ======================*/
 
-.countdown_wrapper {
-    position:absolute;
-    bottom: 0px;
-    color:#ffffff;
-}
-
-.countdown_wrapper .countdown_top {
-    background: #ff4800;
-    font-size: 19px;
-    padding: 10px;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-.countdown_wrapper .countdown_bottom {
-    display: flex;
-    background: #d93d00;
-    padding: 10px 20px;
-}
-
-.countdown_wrapper .countdown_time {
-    font-size: 70px;
-    border-right: 1px solid #F44336;
-    margin-right: 14px;
-    padding-right: 49px;
-}
-.countdown_wrapper .countdown_item:last-child .countdown_time{
-    border:none;
-}
-
-.countdown_wrapper .countdown_tag {
-    text-transform: uppercase;
-    font-size: 20px;
-    padding-left: 7px;
-}
-
-/*====================
-        VENUE NFO
-======================*/
-
-.gs_wrapper {
-    display: flex;
-    padding: 170px 0px;
-    color:#2f2f2f;
-}
-
-.gs_item {
-    width:50%;
-    color:#ffffff;
-    text-align: center;
-}
-                      
-.gs_item .gs_outer {
-    width: 300px;
-    border: 2px solid #828282;
-    margin: auto;
-    padding: 5px;
-}
-
-.gs_item .gs_inner { 
-    border: 2px solid #828282;
-    position: relative;
-    padding: 0px 20px;
-    transition: all 500ms ease;
-}
-
-.gs_item .gs_inner:hover {
-    background: #3e3e3e;
-}
-
-.gs_item .gs_icon_square {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -54px;
-    left: 100px;
-}
-
-.gs_item .gs_icon {
-    width: 50px;
-    height: 50px;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    position: absolute;
-    top: -30px;
-    left: 124px;
-}
-
-.gs_item .gs_title {
-    font-size: 28px;
-    margin: 90px 0px 20px 0px;
-    border-bottom: 1px solid #5d5d5d;
-    padding-bottom: 10px;
-}
-
-.gs_item .gs_description {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 90px;
+.background_image {
+background-size: contain;
 }
 
 /*====================
@@ -324,73 +172,6 @@ footer .footer_copyright {
 }
 
 
-/*====================
-        LISTINGS NFO
-======================*/
-
-.l_wrapper {
-    display: flex;
-    padding: 170px 0px;
-    color: black;
-}
-
-.l_item {
-    width:50%;
-    color:#ffffff;
-    text-align: center;
-}
-                      
-.l_item .l_outer {
-    width: 300px;
-    border: 2px solid #828282;
-    margin: auto;
-    padding: 5px;
-}
-
-.l_item .l_inner { 
-    border: 2px solid #828282;
-    position: relative;
-    padding: 0px 20px;
-    transition: all 500ms ease;
-}
-
-.l_item .l_inner:hover {
-    background: #3e3e3e;
-}
-
-.l_item .l_icon_square {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -54px;
-    left: 100px;
-}
-
-.l_item .l_icon {
-    width: 50px;
-    height: 50px;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    position: absolute;
-    top: -30px;
-    left: 124px;
-}
-
-.l_item .l_title {
-    font-size: 28px;
-    margin: 90px 0px 20px 0px;
-    border-bottom: 1px solid #5d5d5d;
-    padding-bottom: 10px;
-}
-
-.l_item .l_description {
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 90px;
-}
 
 /*====================
         Gitconnected
