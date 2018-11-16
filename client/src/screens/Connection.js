@@ -1,3 +1,4 @@
+// import react from 'react';
 import  React, {Component} from 'react'
 import Fade from 'react-reveal/Fade';
 
