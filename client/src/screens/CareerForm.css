@@ -7,3 +7,24 @@
 .TextField{
   text-align:center;
 }
+
+@media (min-width:576px){
+  form{
+    font-size:1.6em;
+    color: red;
+  }
+}
+
+@media (max-width:575.98px){
+  form{
+    font-size:1.5em;
+    color: orange;
+  }
+}
+
+@media (min-width:960px){
+  form{
+    font-size:1.7em;
+    color:blue;
+  }
+}

@@ -85,7 +85,6 @@ const Header={
 }
 
 
-
 class CareerForm extends React.Component {
   state = {
     name: "",
@@ -180,7 +179,7 @@ class CareerForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div style={{marginTop: 200, marginRight: 300, marginLeft:300, marginBottom:300 }}className={classes.root}>
+      <div style={{marginTop: 200, marginRight: 100, marginLeft:100, marginBottom:300 }}className={classes.root}>
         <h2 style={Header}>Career Services Form</h2>
         <Grid container spacing={75}>
           <Grid item xs={12}>
