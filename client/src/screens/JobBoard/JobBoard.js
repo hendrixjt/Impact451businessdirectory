@@ -40,7 +40,7 @@ class JobBoard extends React.Component {
             )
         }
         return (
-            <div>
+            <div style={{marginTop:180}}>
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>

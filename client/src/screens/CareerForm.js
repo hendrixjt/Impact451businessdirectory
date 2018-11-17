@@ -59,6 +59,10 @@ const styles = theme => ({
   marginRight: theme.spacing.unit,
    
   },
+  button:{
+    background:"#FF6363",
+    color:"white"
+  },
   formControl: {
     margin: theme.spacing.unit,
     minWidth: 120
@@ -69,6 +73,7 @@ const styles = theme => ({
   menu: {
     width: 200
   },
+
   paperr: {
     position: "absolute",
     width: theme.spacing.unit * 50,
@@ -80,10 +85,8 @@ const styles = theme => ({
 
 const Header={
   textAlign: "center",
-  color: "grey",
-  
+  color:" #FF6363"
 }
-
 
 class CareerForm extends React.Component {
   state = {
@@ -101,7 +104,7 @@ class CareerForm extends React.Component {
     message: "",
     multiline: "Flexible",
     shrink: false,
-    value: "female",
+    value: "",
     modal: {
       open: false
     }
@@ -162,17 +165,14 @@ class CareerForm extends React.Component {
 
     console.log(this.state);
 
-    //this.tempState = this.state;
+
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
-      // e.setState({
-      //   messageFromServer: response.data
-      // });
+      
   
      }).catch((error)=> {
        console.log("========errorr===>", error.message)
      });
-    // this.handleOpenM();
   };
 
   render() {
@@ -343,7 +343,6 @@ class CareerForm extends React.Component {
                 <Button
                   type="submit"
                   variant="contained"
-                  color="primary"
                   className={classes.button}
                   onClick={this.handleSubmit}
                 >
