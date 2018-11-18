@@ -63,7 +63,7 @@ models.sequelize.sync({alter:true}).then(function () {
   },{
     Company: 'Code of Conduct',
     Position: 'Junior Developer Full Stack',
-    Location: 'Austin, TN'
+    Location: 'Austin, TX'
   }, {
     Company: 'California Code Rush',
     Position: 'Full Stack Web Developer',
