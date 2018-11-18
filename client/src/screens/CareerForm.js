@@ -92,6 +92,11 @@ const Header={
   textShadow: "0 2px 3px black"
 }
 
+const Instuctions={
+  textAlign: "center",
+  color: "black"
+}
+
 class CareerForm extends React.Component {
   state = {
     name: "",
@@ -185,6 +190,7 @@ class CareerForm extends React.Component {
     return (
       <div style={{marginTop: 200, marginRight: 100, marginLeft:100, marginBottom:300 }}className={classes.root}>
         <h1 style={Header}>Career Services Form</h1>
+        <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
         <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
