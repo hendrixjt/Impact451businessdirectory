@@ -1,9 +1,6 @@
-.CareerForm {
+body {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  background-color: #e3f3f3;
+  margin: 0 auto;
+
 }
 
-.TextField{
-  text-align:center;
-}

@@ -22,6 +22,9 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
+import red from '@material-ui/core/colors/red';
+
+
 import axios from "axios";
 
 import './CareerForm.css';
@@ -42,11 +45,12 @@ function getModalStyle() {
   };
 }
 
+
 const styles = theme => ({
   root: {
-    color: green[600],
+    color: red[600],
     "&$checked": {
-      color: green[500]
+      color: red[500]
     }
   },
   checked: {},
@@ -57,7 +61,6 @@ const styles = theme => ({
   textField: {
   marginLeft: theme.spacing.unit,
   marginRight: theme.spacing.unit,
-   
   },
   button:{
     background:"#FF6363",
@@ -85,7 +88,8 @@ const styles = theme => ({
 
 const Header={
   textAlign: "center",
-  color:" #FF6363"
+  color:" #FF6363",
+  textShadow: "0 2px 3px black"
 }
 
 class CareerForm extends React.Component {
@@ -180,7 +184,7 @@ class CareerForm extends React.Component {
 
     return (
       <div style={{marginTop: 200, marginRight: 100, marginLeft:100, marginBottom:300 }}className={classes.root}>
-        <h2 style={Header}>Career Services Form</h2>
+        <h1 style={Header}>Career Services Form</h1>
         <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
@@ -232,7 +236,7 @@ class CareerForm extends React.Component {
 
               <Paper className={classes.paper}>
                 <TextField
-                  id="filled-Current Module-input"
+                  id="filled-current module-input"
                   label="Current Module"
                   className={classes.textField}
                   style={{width:'97%'}}
@@ -263,13 +267,11 @@ class CareerForm extends React.Component {
                         value="Yes"
                         control={<Radio color="primary" />}
                         label="Yes"
-                        labelPlacement="start"
                       />
                       <FormControlLabel
                         value="No"
                         control={<Radio color="primary" />}
                         label="No"
-                        labelPlacement="start"
                       />
                     </RadioGroup>
                   </FormControl>
