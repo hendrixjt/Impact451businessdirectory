@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import testImg from  '../resources/images/slide_one.jpg';
+import testImg from  '../resources/images/Main.jpg';
 import ReactPlayer from 'react-player'
 import Video from '../components/Video';
 
@@ -20,8 +20,7 @@ import Video from '../components/Video';
 //     }
 //   }
   
-import React from 'react';
-import testImg from  '../resources/images/Main.jpg';
+
 
 
 const Home = () => {
