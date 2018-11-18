@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
-
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom';
 
+import { Monkey } from '../Ui/Monkey';
 
 class Header extends Component {
     
@@ -44,12 +45,21 @@ class Header extends Component {
                padding: '10px 5px'
            }}
            >
-           <Toolbar>
            
-               <div className="header_logo">
-                <div className="font_righteous header_logo_githired"> GitHired </div>
-                <div className="header_logo_title">A Website for Coders by Coders! </div>
+           <Toolbar style= {{display:'flex'}}>
+                <div style={{flexGrow: 1}}>
+                    <div className="header_logo">
+                        <Monkey
+                            link={true}
+                            linkTo="/"
+                            width="90px"
+                            height="90px"
+                    />
+                
                </div>
+               </div>
+               
+
 
                <div className="header_labels">{this.props.children}</div>
                
@@ -60,18 +70,4 @@ class Header extends Component {
    }
 }
 
-
-
 export default Header;
-// const Header = ({title}) => (
-//     <div>
-//      <a href="/">Home</a>
-//      <a href="/jobs">GitJobs</a>
-//      <a href="/forms">GitForms</a>
-//      <a href="/video">GitInspired</a>
-//      <a href="/connected">GitConnected</a>
-//      <h1>{title}</h1>
-//     </div>
-// );
-
-// export default Header;
