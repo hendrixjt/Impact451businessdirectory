@@ -20,6 +20,7 @@ import CareerForm from './screens/CareerForm';
 import './resources/styles.css';
 import './app.css';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -27,16 +28,16 @@ function App() {
         
         <Header>
         <i class="fa fa-bars fa-3x"></i>
-        <i class="fa fa-times fa-3x"></i>
+        
         <div class="header-links">
         
          
             <li>
-        <Link className="nav-button" to="/">Home</Link> 
+        <Link className="data-menuanchor" to="/">Home</Link> 
             </li>
-            <li>
+           <li> 
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
-            </li>
+          </li>
         <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
             <li>
         <Link className="nav-button" to="/connection">GitConnected</Link>
