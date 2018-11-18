@@ -1,9 +1,10 @@
 import React from 'react';
 // import React, {Component} from 'react';
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
-import './resources/styles.css';
+
 import Header from './components/header_footer/Header';
 import Footer from './components/header_footer/Footer';
+
 
 import Home from './screens/Home';
 import JobBoard from './screens/JobBoard/JobBoard';
@@ -11,6 +12,7 @@ import CareerForm from './screens/CareerForm';
 // import Connection from './screens/Connection';
 
 
+<<<<<<< HEAD
 // import ReactYouTubeExample from './screens/Connection';
 
 
@@ -20,6 +22,11 @@ import CareerForm from './screens/CareerForm';
 import './resources/styles.css';
 import './app.css';
 
+=======
+
+import './resources/styles.css';
+import './app.css';
+>>>>>>> mayrag
 
 function App() {
   return (
@@ -33,7 +40,7 @@ function App() {
         
          
             <li>
-        <Link className="data-menuanchor" to="/">Home</Link> 
+        <Link className="nav-button" to="/">Home</Link> 
             </li>
            <li> 
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
@@ -53,7 +60,7 @@ function App() {
           <Route path="/careerForm" exact="true" component={CareerForm} />
           {/* <Route path="/connection" exact="true" component={Connection} /> */}
         </Switch>
-
+        
         <Footer/>
        
         </div>
