@@ -1,5 +1,6 @@
 import React from 'react';
 import testImg from  '../resources/images/slide_one.jpg';
+import GoogleMaps from '../components/Map';
 
 
 const Home = () => {
@@ -17,6 +18,10 @@ const Home = () => {
                                 
                             }}
                         ></div> 
+                        <div>
+                            <h1>Hello to my wonderful maps!</h1>
+                            <GoogleMaps/>
+                        </div>
                         </div>
                         </div>
                         </div>

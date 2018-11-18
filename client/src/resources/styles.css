@@ -3,6 +3,7 @@ body {
     padding:0;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    background: #3e3e3e;
     
 }
 
@@ -90,7 +91,7 @@ header .header_logo_title {
  
    .header-links a {
      color: white;
-     -webkit-transition: all 0.2s ease-in;
+    
    }
  
    .header-links a:hover {
