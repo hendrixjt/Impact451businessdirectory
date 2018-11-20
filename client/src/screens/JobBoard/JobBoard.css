@@ -45,17 +45,20 @@
 } */
 
 .Post {
-    /* display: flex; */
-    /* flex-flow: row wrap; */
-    /* justify-content: center; */
-    width: 50%;
+    /* display: flex;  */
+    flex: 50%;
+    flex-flow: row wrap;
+    justify-content: center;
+     width: 50%;
     margin: 20px auto;
     border-radius: 5px;
     border: 1px solid #eee;
     border-color: gray;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
-    text-shadow: 0 2px 3px rgb(114, 99, 99)
+    text-shadow: 0 2px 3px rgb(114, 99, 99);
+ 
+
     
     /* background: white; */
     

@@ -40,7 +40,7 @@ class JobBoard extends React.Component {
             )
         }
         return (
-            <div>
+            <div className="row">
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>
