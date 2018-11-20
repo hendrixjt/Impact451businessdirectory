@@ -35,18 +35,9 @@ a {
         HEADER
 ======================*/
 
-
 header {
-    padding:10px 0px; 
+    padding:10px 10px; 
     transition: all 300ms ease-in; 
-       
-}
-
-header .header_logo {
-    flex-grow: 1;
-}
-header .header_logo_githired {
-    font-size: 40px; 
 }
 
 header .header_logo_title {
@@ -86,7 +77,7 @@ header .header_logo_title {
       color: #FF6363 !important;
     }
    
-
+   
 /*====================
         FOOTER
 ======================*/
@@ -94,21 +85,28 @@ header .header_logo_title {
 footer {
     padding:10px 0px;
     text-align: center;
-    font-size: 60px;
+    font-size: 25px;
     color:#ffffff;
     background:  #FF6363;
 }
 
 
 footer .footer_copyright {
-    font-size: 18px;
+    font-size: 12px;
 }
+.social-links a{
+    color: white;
+    padding: 0px 5px 0px 5px;
+  }
 
-
-footer .footer_logo {
-    flex-grow: 1;
-    display:center;
-}
+  .social-links a:hover {
+    color: #3c3c3c;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
 
 
 /*====================
@@ -118,6 +116,64 @@ footer .footer_logo {
 .background_image {
 background-size: contain;
 }
+.home_box {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 600px;
+    height: 160px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+   
+ }
+ .home_subtitle {
+   
+    /* height: 121px; */
+    /* margin: 0_auto; */
+    text-align: center;
+    color: white;
+    font-size: 54px;
+    padding: 21px 70px 0px 70px; 
+    
+  
+   
+ }
+ .home_title {
+   
+    color: WHITE ;
+    text-align: center;
+    padding: 21px 70px 0px 70px;  
+    font-size: 27px;
+ }
+
+
+ #submit {
+    
+    margin: 4px 10px;
+    outline: none;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 1px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+  
+    
+    
+  }
+
+  #submit:hover {
+    background-color: transparent;
+    color: #FF6363;
+    
+  }
+
 /*====================
         Monkey
 ======================*/
