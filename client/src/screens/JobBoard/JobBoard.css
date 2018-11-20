@@ -1,3 +1,8 @@
+body {
+    margin-top: 107px;
+}
+
+
 /* .JobBoard {
     width: 80%;
     margin: 20px auto;
@@ -84,7 +89,7 @@
  }
  @media (min-width: 960px) {
     .Post {
-        font-size: 1.em;
+        font-size: 1.2em;
         /* color: rgb(101, 150, 152); */
     }
  }
