@@ -1,5 +1,7 @@
 import React from 'react';
 import testImg from  '../resources/images/Main.jpg';
+// import { Link } from 'react-router-dom'
+// import Button from '@material-ui/core/Button';
 
 
 const Home = () => {
@@ -14,12 +16,14 @@ const Home = () => {
            <div className="font_righteous home_subtitle">
            Revivalist in Tech
 
-           <button type="submit" id="submit"  class="btn btn-lg" >Play Video</button>
-            
-            <button type="submit" id="submit"  class="btn btn-lg">Git Started </button>
-           </div>
-           
 
+ {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
+           <button id="submit" href="/">Play Video   </button>
+           
+            <button type="submit" id="submit"  class="btn btn-lg">GitStarted </button>
+           </div>
+          
+          
            
            
            </div>

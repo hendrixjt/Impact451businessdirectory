@@ -81,18 +81,19 @@ header .header_logo_title {
 /*====================
         FOOTER
 ======================*/
-
 footer {
     padding:10px 0px;
     text-align: center;
-    font-size: 25px;
     color:#ffffff;
     background:  #FF6363;
 }
+.footer .footer_logo{
+    font-size: 25px;
+}
 
-
-footer .footer_copyright {
-    font-size: 12px;
+.social-links {
+    padding: 15px;
+    font-size: 20px;
 }
 .social-links a{
     color: white;
@@ -107,8 +108,9 @@ footer .footer_copyright {
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-
-
+  footer .footer_copyright {
+    font-size: 12px;
+}
 /*====================
         HOME
 ======================*/
@@ -162,21 +164,80 @@ background-size: contain;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: lighter;
-    
-  
-    
-    
   }
 
   #submit:hover {
     background-color: transparent;
     color: #FF6363;
-    
   }
 
 /*====================
-        Monkey
+        Gitconnected
 ======================*/
+
+  .gs_wrapper {
+    display: flex;
+    padding: 170px 0px;
+ }
+ 
+ .gs_item {
+    width:50%;
+    color:#ffffff;
+    text-align: center;
+ }
+                     
+ .gs_item .gs_outer {
+    width: 300px;
+    border: 2px solid #828282;
+    margin: auto;
+    padding: 5px;
+ }
+ 
+ .gs_item .gs_inner {
+    border: 2px solid #828282;
+    position: relative;
+    padding: 0px 20px;
+    transition: all 500ms ease;
+ }
+ 
+ .gs_item .gs_inner:hover {
+    background: #3e3e3e;
+ }
+ 
+ .gs_item .gs_icon_square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -54px;
+    left: 100px;
+ }
+ 
+ .gs_item .gs_icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: -30px;
+    left: 124px;
+ }
+ 
+ .gs_item .gs_title {
+    font-size: 28px;
+    margin: 90px 0px 20px 0px;
+    border-bottom: 1px solid #5d5d5d;
+    padding-bottom: 10px;
+ }
+ 
+ .gs_item .gs_description {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 90px;
+ }
+ 
 
 
 

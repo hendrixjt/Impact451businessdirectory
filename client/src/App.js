@@ -7,6 +7,7 @@ import Footer from './components/header_footer/Footer';
 
 
 import Home from './screens/Home';
+import GitStarted from './screens/Gitstarted';
 import JobBoard from './screens/JobBoard/JobBoard';
 import CareerForm from './screens/CareerForm';
 import Connection from './screens/Connection';
@@ -31,6 +32,9 @@ function App() {
             <li>
         <Link className="nav-button" to="/">Home</Link> 
             </li>
+            <li>
+        <Link className="nav-button" to="/gitStarted">GitStarted</Link> 
+            </li>
            <li> 
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
           </li>
@@ -45,6 +49,7 @@ function App() {
 
         <Switch>
           <Route path="/" exact="true" component={Home} /> 
+          <Route path="/gitStarted" exact="true" component={GitStarted} /> 
           <Route path="/jobBoard" exact="true" component={JobBoard} />
           <Route path="/careerForm" exact="true" component={CareerForm} />
           <Route path="/connection" exact="true" component={Connection} />
