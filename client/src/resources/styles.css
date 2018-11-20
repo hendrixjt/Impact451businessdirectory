@@ -195,8 +195,8 @@ background-size: contain;
 
  .player-wrapper {
      position: absolute;
-     top:0;
-     left:0;
+     top:50px;
+     left:20px;
      padding-top: 25%;
      width: 100%;
      height: 100%;
@@ -204,8 +204,8 @@ background-size: contain;
 
  .react-player {
      position: relative;
-     width: 600px;
-     height: 500px;
+     width: 800px;
+     height: 600px;
      
      
  }

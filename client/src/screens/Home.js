@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import testImg from  '../resources/images/Main.jpg';
 import ReactPlayer from 'react-player'
 import Video from '../components/Video';
-
+// import BackgroundVideo from '../components/BackgroundVideo';
 
 // class App extends Component {
 //     render() {
@@ -32,7 +32,7 @@ const Home = () => {
         <div className="bck_black">
         
             <div className="home_wrapper">
-           
+            
                         <div
                             className="background_image"
                             style={{

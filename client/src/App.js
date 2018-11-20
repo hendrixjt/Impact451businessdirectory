@@ -12,21 +12,9 @@ import CareerForm from './screens/CareerForm';
 // import Connection from './screens/Connection';
 
 
-<<<<<<< HEAD
-// import ReactYouTubeExample from './screens/Connection';
-
-
-
-// import Job from './containers/Job/Job';
 
 import './resources/styles.css';
 import './app.css';
-
-=======
-
-import './resources/styles.css';
-import './app.css';
->>>>>>> mayrag
 
 function App() {
   return (

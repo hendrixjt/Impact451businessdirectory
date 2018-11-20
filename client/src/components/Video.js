@@ -10,9 +10,9 @@ class Video extends Component {
       return (
         <div>
           <ReactPlayer
-            url= "https://player.vimeo.com/video/301328531"
+            url= "https://player.vimeo.com/video/301571057"
             className='react-player'
-          //  playing 
+           preload 
             // width="100%"
             // height=
           />
