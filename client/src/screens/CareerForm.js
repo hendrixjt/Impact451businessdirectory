@@ -80,7 +80,7 @@ const styles = theme => ({
 
 const Header={
   textAlign: "center",
-  color: "grey",
+  color: "Grey",
   
 }
 

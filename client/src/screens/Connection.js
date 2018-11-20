@@ -1,10 +1,14 @@
-import React,{ Component } from 'react'
+import  React, {Component} from 'react'
+import Fade from 'react-reveal/Fade';
+
+
+
 import YouTube from 'react-youtube';
 
 import './Connection.css';
 //www.youtube.com/watch?v=HvZU41cFJR0&t=4s
 //const Home = () => <Header title= "Home" />;
-const Connection = () => <div style={{backgroundColor: 'blue'}} />;
+// const Connection = () => <div style={{backgroundColor: 'blue'}} />;
 
 
 
@@ -25,11 +29,13 @@ const Connection = () => <div style={{backgroundColor: 'blue'}} />;
         };
         const {videoId} = this.props
         return (
+          <div class= "video">
           <YouTube
             videoId={'HvZU41cFJR0'}
             opts={opts}
             onReady={this.videoOnReady}
           />
+          </div>
         );
       }
     }

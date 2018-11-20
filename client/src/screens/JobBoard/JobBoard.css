@@ -1,7 +1,9 @@
 body {
     margin-top: 107px;
 }
-
+header {
+    position: absolute;
+}
 
 /* .JobBoard {
     width: 80%;
