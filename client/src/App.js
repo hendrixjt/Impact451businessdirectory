@@ -30,7 +30,7 @@ function App() {
         
          
             <li>
-        <Link className="nav-button" to="/">Home</Link> 
+        <Link className="nav-button" to="/">GitHome</Link> 
             </li>
             <li>
         <Link className="nav-button" to="/gitStarted">GitStarted</Link> 

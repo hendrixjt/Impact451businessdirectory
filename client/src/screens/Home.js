@@ -1,6 +1,6 @@
 import React from 'react';
 import testImg from  '../resources/images/Main.jpg';
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import Button from '@material-ui/core/Button';
 
 
@@ -14,13 +14,15 @@ const Home = () => {
             GitHired 
            </div>
            <div className="font_righteous home_subtitle">
-           Revivalist in Tech
+           Revivalists in Tech
 
 
  {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
            <button id="submit" href="/">Play Video   </button>
            
-            <button type="submit" id="submit"  class="btn btn-lg">GitStarted </button>
+
+            <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
+            
            </div>
           
           
