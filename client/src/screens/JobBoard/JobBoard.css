@@ -1,3 +1,11 @@
+/* .background-image {
+
+        background-image: url('../../resources/images/Main.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    
+} */
 body {
     margin-top: 107px;
 }
@@ -100,3 +108,6 @@ header {
          Font-color: red;
      }
  } */
+ .background_image {
+    background-size: contain;
+    }
