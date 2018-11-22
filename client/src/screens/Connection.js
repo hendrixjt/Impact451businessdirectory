@@ -1,105 +1,114 @@
-import React from "react";
-import { Grid, TextField, Paper, Button, Typography } from "@material-ui/core";
-import fetch from "node-fetch";
-import red from '@material-ui/core/colors/red';
 
-const formStyles = {
-  paddingTop: "15%"
-};
-
-const msgStyles = {
-  height: "100px"
-};
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { withStyles } from '@material-ui/core/styles';
+import MenuItem from '@material-ui/core/MenuItem';
+import TextField from '@material-ui/core/TextField';
+import Button from "@material-ui/core/Button";
 
 
+
+const styles = theme => ({
+  container: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  button:{
+    background:"#FF6363",
+    color:"white"
+  },
+  textField: {
+    marginLeft: theme.spacing.unit,
+    marginRight: theme.spacing.unit,
+    width: 200,
+  },
+  dense: {
+    marginTop: 19,
+  },
+  menu: {
+    width: 200,
+  },
+});
 const Header={
   textAlign: "center",
   color:" #FF6363",
   textShadow: "0 2px 3px black"
-};
+}
 
 
-export default class ContactForm extends React.Component {
+
+class ConnectionForm extends React.Component {
+  state = {
+    name: '',
+    email: '',
+    multiline: '',
+    
+  };
+
+  handleChange = name => event => {
+    this.setState({
+      [name]: event.target.value,
+    });
+  };
+
   render() {
+    const { classes } = this.props;
+
     return (
-      <div id="contentContainer" style={{marginTop: 180, marginRight: 100, marginBottom: 300,marginLeft: 100,  }}>
-        <Grid container spacing={16}>
-          <Grid item xs={12} spacing={16}>
-            <Typography variant="display2" gutterBottom>
-              <h3 style={Header}>Git in Touch!</h3>
-            </Typography>
-          </Grid>
-        </Grid>
-        <Grid container spacing={16}>
-          <Grid item xs={12} lg={12}>
-            <Paper>
-              <TextField id="name" type="text" placeholder="Name"/>
-            </Paper>
-          </Grid>
-        </Grid>
+      <div style={{marginTop: 200, marginRight: 100, marginLeft: 100, marginBottom: 300, }}className={classes.root}>
+      <h1 style={Header}>Git In Touch</h1>
+      <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
+       <form>
+        <TextField 
+          id="outlined-name"
+          label="Name"
+          className={classes.textField}
+          value={this.state.name}
+          onChange={this.handleChange('name')}
+          style={{width:'97%'}}
+          margin="normal"
+          textAlign="center"
+        />
 
-        <Grid container spacing={16}>
-          <Grid item xs={12} lg={12}>
-            <Paper>
-              <TextField id="email" type="text" placeholder="githirednow@gmail.com" />
-            </Paper>
-          </Grid>
-        </Grid>
+        <TextField
+          id="outlined-email"
+          label="Email"
+          className={classes.textField}
+          value={this.state.email}
+          onChange={this.handleChange('email')}
+          style={{width:'97%'}}
+          margin="normal"
+        />
+  
+        <TextField
+          id="outlined-multiline-flexible"
+          label="Message"
+          multiline
+          rowsMax="4"
+          value={this.state.message}
+          onChange={this.handleChange('message')}
+          className={classes.textField}
+          style={{width:'97%'}}
+          margin="normal"
+        />
 
-        <Grid container spacing={16}>
-          <Grid item xs={12} lg={12}>
-            <Paper>
-              <TextField id="msg" type="text" placeholder="message" />
-            </Paper>
-          </Grid>
-        </Grid>
+        <Button 
+                  type="submit"
+                  id="lat-button-file"
+                  variant="contained"
+                  className={classes.button}
+                  onClick={this.handleSubmit}
+                >
+                  Submit
+         </Button>         
 
-        <Grid container spacing={16}>
-          <Grid id="btnContainer" item lg={12}>
-            <Button id="submitBtn" onClick={this.props.onSubmit}>
-              Send Message
-            </Button>
-          </Grid>
-        </Grid>
-      </div>
+      </form>
+    </div>
     );
   }
 }
 
-const Confirmation = props => (
-  <Grid container spacing={16}>
-    <Grid item xs={12} lg={12}>
-      <Typography display4>
-        {"Thanks for the message, I'll get back to you soon!"}
-      </Typography>
-    </Grid>
-  </Grid>
-);
 
-class ProcessForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { stage: 1 };
-    this.handleClick = this.handleClick.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+export default withStyles(styles)(ConnectionForm);
 
-  handleClick(e) {
-    e.preventDefault();
-    React.unmountComponentAtNode(document.getElementById("contentContainer"));
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-    const data = new FormData(e.target);
-
-    fetch("/submit", {
-      method: "POST",
-      body: data
-    });
-  }
-
-  render() {
-    return <ContactForm onSubmit={this.handleSubmit} />;
-  }
-}

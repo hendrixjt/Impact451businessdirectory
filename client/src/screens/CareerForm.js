@@ -92,11 +92,6 @@ const Header={
   textShadow: "0 2px 3px black"
 }
 
-const Instuctions={
-  textAlign: "center",
-  color: "black"
-}
-
 class CareerForm extends React.Component {
   state = {
     name: "",
