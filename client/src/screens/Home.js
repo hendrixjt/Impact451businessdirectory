@@ -21,6 +21,8 @@ import Video from '../components/Video';
 //   }
   
 
+import { Link } from 'react-router-dom'
+// import Button from '@material-ui/core/Button';
 
 
 const Home = () => {
@@ -31,8 +33,29 @@ const Home = () => {
         // </div>    
         <div className="bck_black">
         
-            <div className="home_wrapper">
+        <div className="home_box">
+           <div className="font_righteous home_title">
+            GitHired 
+           </div>
+           <div className="font_righteous home_subtitle">
+           Revivalists in Tech
+
+
+ {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
+           <button id="submit" href="/">Play Video   </button>
+           
+
+            <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
             
+           </div>
+          
+          
+           
+           
+           </div>
+          
+            
+           
                         <div
                             className="background_image"
                             style={{

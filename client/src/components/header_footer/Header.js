@@ -42,7 +42,7 @@ class Header extends Component {
            style={{
              backgroundColor: this.state.headerShow ? '#2f2f2f' : 'transparent',
                boxShadow: 'none',
-               padding: '10px 5px'
+               padding: '10px 10px'
            }}
            >
            
@@ -52,8 +52,9 @@ class Header extends Component {
                         <Monkey
                             link={true}
                             linkTo="/"
-                            width="90px"
-                            height="90px"
+                            width="100x"
+                            height="80px"
+                            
                     />
                 
                </div>

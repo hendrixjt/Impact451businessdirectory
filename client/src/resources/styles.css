@@ -26,6 +26,7 @@ body {
 .center_wrapper {
     width: 900px;
     margin:0 auto;
+    
 }
 a {
     text-decoration: none !important;
@@ -35,18 +36,9 @@ a {
         HEADER
 ======================*/
 
-
 header {
-    padding:10px 0px; 
+    padding:10px 10px; 
     transition: all 300ms ease-in; 
-       
-}
-
-header .header_logo {
-    flex-grow: 1;
-}
-header .header_logo_githired {
-    font-size: 40px; 
 }
 
 header .header_logo_title {
@@ -86,31 +78,40 @@ header .header_logo_title {
       color: #FF6363 !important;
     }
    
-
+   
 /*====================
         FOOTER
 ======================*/
-
 footer {
     padding:10px 0px;
     text-align: center;
-    font-size: 60px;
     color:#ffffff;
     background:  #FF6363;
 }
-
-
-footer .footer_copyright {
-    font-size: 18px;
+.footer .footer_logo{
+    font-size: 25px;
 }
 
-
-footer .footer_logo {
-    flex-grow: 1;
-    display:center;
+.social-links {
+    padding: 15px;
+    font-size: 20px;
 }
+.social-links a{
+    color: white;
+    padding: 0px 5px 0px 5px;
+  }
 
-
+  .social-links a:hover {
+    color: #3c3c3c;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  footer .footer_copyright {
+    font-size: 12px;
+}
 /*====================
         HOME
 ======================*/
@@ -118,47 +119,121 @@ footer .footer_logo {
 .background_image {
 background-size: contain;
 }
-/*====================
-        Monkey
-======================*/
+.home_box {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: 600px;
+    height: 160px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+   
+ }
+ .home_subtitle {
+   
+    /* height: 121px; */
+    /* margin: 0_auto; */
+    text-align: center;
+    color: white;
+    font-size: 53px;
+    padding: 21px 70px 0px 70px; 
+    
+  
+   
+ }
+ .home_title {
+   
+    color: WHITE ;
+    text-align: center;
+    padding: 21px 70px 0px 70px;  
+    font-size: 27px;
+ }
 
 
+ #submit {
+    
+    margin: 4px 10px;
+    outline: none;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 1px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
 
-
-/*====================
-        Gitconnected
-======================*/
-
-.g_wrapper {
-    display: flex;
-    padding: 170px 0px;
+  #submit:hover {
+    background-color: transparent;
+    color: #FF6363;
+  }
+  a:visited {
+    color: white;
 }
+/*====================
+       GitStarted
+======================*/
 
-.g_item {
+
+.gitstarted h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color:#dddddd;
+    font-size: 52px;
+    padding: 50px 0px ;
+    font-family: 'Righteous', cursive;
+    /* background: #ffffff */
+ }
+ 
+ .gitstarted_info .steps  {
+    line-height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    border-top: 150px solid #dddddd;
+    border-bottom: 90px solid #dddddd;
+    padding: 30px 0px;
+    background-color: #dddddd; 
+ }
+ 
+ .gitstarted_l {
+    font-family: 'Righteous', cursive;
+    font-size: 25px
+  }
+  .gs_wrapper {
+    display: flex;
+    padding: 130px 0px;
+ }
+ 
+ .gs_item {
     width:50%;
     color:#ffffff;
     text-align: center;
-}
-                      
-.g_item .g_outer {
+ }
+                     
+ .gs_item .gs_outer {
     width: 300px;
     border: 2px solid #828282;
     margin: auto;
     padding: 5px;
-}
-
-.g_item .g_inner { 
+ }
+ 
+ .gs_item .gs_inner {
     border: 2px solid #828282;
     position: relative;
     padding: 0px 20px;
     transition: all 500ms ease;
-}
-
-.g_item .g_inner:hover {
+ }
+ 
+ .gs_item .gs_inner:hover {
     background: #3e3e3e;
-}
-
-.g_item .g_icon_square {
+ }
+ 
+ .gs_item .gs_icon_square {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -167,9 +242,9 @@ background-size: contain;
     transform: rotate(45deg);
     top: -54px;
     left: 100px;
-}
-
-.g_item .g_icon {
+ }
+ 
+ .gs_item .gs_icon {
     width: 50px;
     height: 50px;
     background-size: contain !important;
@@ -177,18 +252,18 @@ background-size: contain;
     position: absolute;
     top: -30px;
     left: 124px;
-}
-
-.g_item .g_title {
+ }
+ 
+ .gs_item .gs_title {
     font-size: 28px;
     margin: 90px 0px 20px 0px;
     border-bottom: 1px solid #5d5d5d;
     padding-bottom: 10px;
-}
-
-.g_item .g_description {
-    font-size: 30px;
-    font-weight: 300;
+ }
+ 
+ .gs_item .gs_description {
+    font-size: 25px;
+    font-weight: 100; 
     margin-bottom: 90px;
 }
  /* //video// */

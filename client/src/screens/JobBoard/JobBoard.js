@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 // import Header from '../../components/header_footer/Header';
 import axios from 'axios';
+// import testImg from  '../resources/images/Main.jpg';
 
 import './JobBoard.css';
+
+
+
+
 
 
 class JobBoard extends React.Component {
@@ -41,6 +46,7 @@ class JobBoard extends React.Component {
         }
         return (
             <div>
+                    
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>
@@ -50,6 +56,7 @@ class JobBoard extends React.Component {
                         </article> 
                    )) 
                 }
+                  
             </div>
         )
     }

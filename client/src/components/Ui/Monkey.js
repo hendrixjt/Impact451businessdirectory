@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import monkeylogo from '../../resources/images/git_logo.jpg';
+import monkeylogo from '../../resources/images/Final.jpg';
 
 export const Monkey = (props) => {
 
