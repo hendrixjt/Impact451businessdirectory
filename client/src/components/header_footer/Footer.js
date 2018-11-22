@@ -21,8 +21,12 @@ const Footer = () => {
         </div> */}
 
         <div class="section fp-auto-height">
-        <div class="font_righteous footer">
-        <p>Connect with GitHired</p>
+        <div class="font_righteous footer_logo">
+        GitHired
+        </div>
+        
+        
+        
         <div class="social-links">
         <span><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></span>
         <span><a href="https://github.com/hendrixjt/Impact451businessdirectory" target="_blank"><i class="fab fa-github"></i></a></span>
@@ -30,11 +34,11 @@ const Footer = () => {
         <span><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></span>
         <span><a href="https://vimeo.com/"><i class="fab fa-fab fa-vimeo-v"></i></a></span>
       </div>
-    </div>
-  </div>
+      </div>
+  
   
         <div className="footer_copyright">
-        GitHired 2018. All right reserved. 
+        GitHired 2018. All Rights Reserved. 
         </div>
         </Fade>
         </footer>
