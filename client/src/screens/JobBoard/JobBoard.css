@@ -1,4 +1,19 @@
-.JobBoard {
+/* .background-image {
+
+        background-image: url('../../resources/images/Main.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+    
+} */
+body {
+    margin-top: 107px;
+}
+header {
+    position: absolute;
+}
+
+/* .JobBoard {
     width: 80%;
     margin: 20px auto;
     border: 1px solid #eee;
@@ -42,16 +57,57 @@
 .JobBoard button:active {
     color: white;
     background-color: #fa923f;
-}
+} */
 
 .Post {
-    /* display: flex; */
+    /* display: flex;  */
+    flex: 50%;
     flex-flow: row wrap;
     justify-content: center;
-    width: 80%;
+     width: 50%;
     margin: 20px auto;
-    border-radius: 40px;
+    border-radius: 5px;
     border: 1px solid #eee;
+    border-color: gray;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
+    text-shadow: 0 2px 3px rgb(114, 99, 99);
+ 
+
+    
+    /* background: white; */
+    
 }
+.boss {
+    color: #FF6363;
+}
+.jobinfo {
+    color: white;
+}
+@media (min-width: 576px) {
+    .Post {
+        font-size: 1em;
+        /* color: red; */
+    }
+ }
+
+ @media (max-width: 575.98px) {
+    .Post {
+        font-size: .8em;
+        /* color: orange; */
+    }
+ }
+ @media (min-width: 960px) {
+    .Post {
+        font-size: 1.2em;
+        /* color: rgb(101, 150, 152); */
+    }
+ }
+ /* .Post{
+     #h1{
+         Font-color: red;
+     }
+ } */
+ .background_image {
+    background-size: contain;
+    }

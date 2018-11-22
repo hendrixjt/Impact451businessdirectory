@@ -40,54 +40,54 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-models.sequelize.sync({alter:true}).then(function () {
-  models.formInput.bulkCreate([
-    {
-    Name: '',
-    Email: '',
-    CurrentModule: ''
-  }])
-  .then(() => {
-    models.formInput.findAll().then(formInput => console.log(formInput));
-  });
+models.sequelize.sync().then(function () {
+  // models.formInput.bulkCreate([
+  //   {
+  //   Name: '',
+  //   Email: '',
+  //   CurrentModule: ''
+  // }])
+  // .then(() => {
+  //   models.formInput.findAll().then(formInput => console.log(formInput));
+  // });
 
-  models.listings.bulkCreate([
-    {
-    Company: 'Social Code',
-    Position: 'Front End Developer',
-    Location: 'Franklin, TN'
-  },{
-    Company: 'Backstreet Coders',
-    Position: 'Back End Developer',
-    Location: 'Orlando, FL'
-  },{
-    Company: 'Code of Conduct',
-    Position: 'Junior Developer Full Stack',
-    Location: 'Austin, TX'
-  }, {
-    Company: 'California Code Rush',
-    Position: 'Full Stack Web Developer',
-    Location: 'Sacramento, CA '
-  },{
-    Company: 'iCode',
-    Position: 'Coding Mentor',
-    Location: 'Seattle, WA'
-  },{
-    Company: 'BGHL Inc',
-    Position: 'Front End Developer',
-    Location: 'Las Vegas, NV' 
-  },{
-    Company: 'Code Blazers',
-    Position: 'Senior Web Developer',
-    Location: 'Fargo, ND'
-  },{
-    Company: 'Code Launchers',
-    Position: 'Full Stack Web Developer',
-    Location: 'Roanoke, VA'
-  }])
-  .then(() => {
-    models.listings.findAll().then(listings => console.log(listings));
-  });
+  // models.listings.bulkCreate([
+  //   {
+  //   Company: 'Social Code',
+  //   Position: 'Front End Developer',
+  //   Location: 'Franklin, TN'
+  // },{
+  //   Company: 'Backstreet Coders',
+  //   Position: 'Back End Developer',
+  //   Location: 'Orlando, FL'
+  // },{
+  //   Company: 'Code of Conduct',
+  //   Position: 'Junior Developer Full Stack',
+  //   Location: 'Austin, TN'
+  // }, {
+  //   Company: 'California Code Rush',
+  //   Position: 'Full Stack Web Developer',
+  //   Location: 'Sacramento, CA '
+  // },{
+  //   Company: 'iCode',
+  //   Position: 'Coding Mentor',
+  //   Location: 'Seattle, WA'
+  // },{
+  //   Company: 'BGHL Inc',
+  //   Position: 'Front End Developer',
+  //   Location: 'Las Vegas, NV' 
+  // },{
+  //   Company: 'Code Blazers',
+  //   Position: 'Senior Web Developer',
+  //   Location: 'Fargo, ND'
+  // },{
+  //   Company: 'Code Launchers',
+  //   Position: 'Full Stack Web Developer',
+  //   Location: 'Roanoke, VA'
+  // }])
+  // .then(() => {
+  //   models.listings.findAll().then(listings => console.log(listings));
+  // });
 
   console.log('database is jacked');
 });
