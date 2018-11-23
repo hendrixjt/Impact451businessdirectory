@@ -23,6 +23,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import red from '@material-ui/core/colors/red';
+import testImg from '../resources/images/Main.jpg';
 
 
 import axios from "axios";
@@ -46,6 +47,7 @@ function getModalStyle() {
 }
 
 
+
 const styles = theme => ({
   root: {
     color: red[600],
@@ -61,14 +63,24 @@ const styles = theme => ({
   textField: {
   marginLeft: theme.spacing.unit,
   marginRight: theme.spacing.unit,
+  borderRadius: '5px'
   },
   button:{
     background:"#FF6363",
-    color:"white"
+    color:"white",
+    marginLeft: theme.spacing.unit,
+    marginTop: '15px',
+    marginBottom: '15px'
   },
   formControl: {
     margin: theme.spacing.unit,
-    minWidth: 120
+    minWidth: 120,
+    background:'white',
+    borderRadius: '5px',
+  },
+  formLabel:{
+    background:'white',
+    margin:'normal',
   },
   dense: {
     marginTop: 16
@@ -76,14 +88,6 @@ const styles = theme => ({
   menu: {
     width: 200
   },
-
-  paperr: {
-    position: "absolute",
-    width: theme.spacing.unit * 50,
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing.unit * 4
-  }
 });
 
 const Header={
@@ -91,6 +95,7 @@ const Header={
   color:" #FF6363",
   textShadow: "0 2px 3px black"
 }
+
 
 class CareerForm extends React.Component {
   state = {
@@ -183,7 +188,15 @@ class CareerForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div style={{marginTop: 200, marginRight: 100, marginLeft:100, marginBottom:300 }}className={classes.root}>
+      <div className="background_image"
+      style={{
+          // height: `${window.innerHeight}px`,
+          backgroundImage: `url(${testImg})`,
+          backgroundAttachment: `fixed`
+        
+      }}
+    >
+      <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
         <h1 style={Header}>Career Services Form</h1>
         <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
         <Grid container spacing={75}>
@@ -205,22 +218,19 @@ class CareerForm extends React.Component {
               </div>
             </Modal>
 
-            <form autoComplete="off">
-              <Paper className={classes.paper}>
+            <form autoComplete="off">     
                 <TextField
                   id="filled-name-input"
                   label="Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{width:'97%',background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="name"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper item xs={12}>
+              
                 <TextField
                   id="filled-email-input"
                   label="Email"
@@ -228,30 +238,27 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
-                  style={{width:'97%'}}
+                  style={{width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper className={classes.paper}>
+              
                 <TextField
                   id="filled-current module-input"
                   label="Current Module"
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="currentmodule"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper  item xs={12}>
+             
                 <div>
                   <FormControl
                     component="fieldset"
+                    style={{width: '97%', background:"white"}}
                     className={classes.formControl}
                   >
                     <FormLabel component="legend">
@@ -263,28 +270,31 @@ class CareerForm extends React.Component {
                       className={classes.group}
                       value={this.state.relocate}
                       onChange={this.handleChange}
+                      control= {<Radio color='primary'/>}
                     >
                       <FormControlLabel
                         value="Yes"
                         control={<Radio color="primary" />}
                         label="Yes"
+                        style={{marginLeft: '2px'}}
                       />
                       <FormControlLabel
                         value="No"
                         control={<Radio color="primary" />}
                         label="No"
+                        style={{marginLeft: '2px'}}
                       />
                     </RadioGroup>
                   </FormControl>
                 </div>
-              </Paper>
-
-              <Paper  item xs={12}>
+            
                 <FormControl
                   component="fieldset"
                   className={classes.formControl}
+                  style={{width:'97%', background:"white"}}
                 >
-                  <FormLabel component="legend">
+                  <FormLabel component="legend"
+                  style={{marginTop: '100px'}}>
                     Which path are you enrolled in?:
                   </FormLabel>
                   <RadioGroup
@@ -296,36 +306,39 @@ class CareerForm extends React.Component {
                       control={<Radio color="primary" />}
                       value="javascript"
                       label="JavaScript"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="java"
                       label="Java"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="ruby"
                       label="Ruby"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="datascience"
                       label="Data Science"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="cybersecurity"
                       label="Cyber Security"
+                      style={{marginLeft: '2px'}}
                     />
                   </RadioGroup>
                 </FormControl>
-              </Paper>
-
-              <Paper item xs={12}>
+             
                 <TextField
                   id="filled-multiline-static"
                   label="Additional Information"
@@ -333,15 +346,11 @@ class CareerForm extends React.Component {
                   rows="8"
                   defaultValue=""
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChangeC("message")}
                 />
-              </Paper>
-
-              <Paper item xs={12}>
-                <br />
 
                 <Button
                   type="submit"
@@ -351,11 +360,10 @@ class CareerForm extends React.Component {
                 >
                   Submit
                 </Button>
-                <br />
-              </Paper>
             </form>
           </Grid>
         </Grid>
+      </div>
       </div>
     );
   }

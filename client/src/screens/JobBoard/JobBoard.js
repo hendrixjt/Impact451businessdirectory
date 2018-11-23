@@ -59,6 +59,8 @@ class JobBoard extends React.Component {
                             <h1 className="boss">{post.Company}</h1>
                             <p className="jobinfo">{post.Position}</p>
                             <p className="jobinfo">{post.Location}</p>
+                            <p className="jobinfo">{post.Email}</p>
+                            <p className="jobinfo">{post.Phone}</p>
                             
                         </article> 
                    )) 

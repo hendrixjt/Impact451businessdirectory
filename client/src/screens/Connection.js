@@ -6,8 +6,8 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
-
-
+// import white from '@material-ui/core/colors/white';
+import testImg from '../resources/images/Main.jpg';
 
 const styles = theme => ({
   container: {
@@ -16,12 +16,16 @@ const styles = theme => ({
   },
   button:{
     background:"#FF6363",
-    color:"white"
+    color:"white",
+    marginLeft: theme.spacing.unit
   },
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
     width: 200,
+    color:"white",
+    // border: '1px solid #ced4da',
+    borderRadius: '5px'
   },
   dense: {
     marginTop: 19,
@@ -56,7 +60,15 @@ class ConnectionForm extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div style={{marginTop: 200, marginRight: 100, marginLeft: 100, marginBottom: 300, }}className={classes.root}>
+      <div className="background_image"
+      style={{
+          height: `${window.innerHeight}px`,
+          backgroundImage: `url(${testImg})`,
+          backgroundAttachment: `fixed`
+        
+      }}
+  >
+      <div style={{marginTop: 100, marginRight: 300, marginLeft: 300, marginBottom: 300, }}className={classes.root}>
       <h1 style={Header}>Git In Touch</h1>
       <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
        <form>
@@ -66,7 +78,7 @@ class ConnectionForm extends React.Component {
           className={classes.textField}
           value={this.state.name}
           onChange={this.handleChange('name')}
-          style={{width:'97%'}}
+          style={{width:'97%', background:"white"}}
           margin="normal"
           textAlign="center"
         />
@@ -77,19 +89,19 @@ class ConnectionForm extends React.Component {
           className={classes.textField}
           value={this.state.email}
           onChange={this.handleChange('email')}
-          style={{width:'97%'}}
+          style={{width:'97%', background:"white"}}
           margin="normal"
         />
   
         <TextField
-          id="outlined-multiline-flexible"
+          id="filled-multiline-static"
           label="Message"
           multiline
-          rowsMax="4"
+          rowsMax="8"
           value={this.state.message}
           onChange={this.handleChange('message')}
           className={classes.textField}
-          style={{width:'97%'}}
+          style={{width: "97%", background:"white"}}
           margin="normal"
         />
 
@@ -101,10 +113,13 @@ class ConnectionForm extends React.Component {
                   onClick={this.handleSubmit}
                 >
                   Submit
-         </Button>         
+         </Button>  
 
       </form>
-    </div>
+      
+      </div>
+      </div>
+    
     );
   }
 }
