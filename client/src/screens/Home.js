@@ -19,7 +19,7 @@ const Home = () => {
 
  {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
            <button id="submit" href="/">Play Video   </button>
-           
+          
 
             <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
             
