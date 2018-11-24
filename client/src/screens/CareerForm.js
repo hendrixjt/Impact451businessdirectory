@@ -61,9 +61,8 @@ const styles = theme => ({
     flexWrap: "wrap"
   },
   textField: {
-  marginLeft: theme.spacing.unit,
-  marginRight: theme.spacing.unit,
-  borderRadius: '5px'
+  margin: theme.spacing.unit,
+  borderRadius: '5px',
   },
   button:{
     background:"#FF6363",
@@ -77,10 +76,6 @@ const styles = theme => ({
     minWidth: 120,
     background:'white',
     borderRadius: '5px',
-  },
-  formLabel:{
-    background:'white',
-    margin:'normal',
   },
   dense: {
     marginTop: 16
@@ -238,7 +233,7 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
-                  style={{width:'97%', background:"white"}}
+                  style={{marginLeft:"7px", width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
@@ -261,9 +256,10 @@ class CareerForm extends React.Component {
                     style={{width: '97%', background:"white"}}
                     className={classes.formControl}
                   >
-                    <FormLabel component="legend">
+                    <label component="legend"
+                    style={{color:'grey', marginTop: '7px', marginLeft: '5px'}}>
                       Are you willing to relocate?
-                    </FormLabel>
+                    </label>
                     <RadioGroup
                       aria-label="relocate"
                       name="relocate"
@@ -293,10 +289,10 @@ class CareerForm extends React.Component {
                   className={classes.formControl}
                   style={{width:'97%', background:"white"}}
                 >
-                  <FormLabel component="legend"
-                  style={{marginTop: '100px'}}>
+                  <label component="legend"
+                  style={{color:'grey', marginTop: '7px', marginLeft: '5px'}}>
                     Which path are you enrolled in?:
-                  </FormLabel>
+                  </label>
                   <RadioGroup
                     name="path"
                     value={this.state.path}
