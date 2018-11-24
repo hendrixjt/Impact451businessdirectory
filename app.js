@@ -40,11 +40,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-<<<<<<< HEAD
-models.sequelize.sync({alter: true}).then(function () {
-=======
 models.sequelize.sync({force: true}).then(function () {
->>>>>>> joshua
   models.formInput.bulkCreate([
     {
     Name: '',
@@ -60,19 +56,12 @@ models.sequelize.sync({force: true}).then(function () {
     Company: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN',
-<<<<<<< HEAD
     Email: 'jobs@githired.com',
     Phone: '451-867-5309'
-=======
-    Email: 'socialcode@gmail.com',
-    Phone: '615-791-0001',
-    
->>>>>>> joshua
   },{
     Company: 'Backstreet Coders',
     Position: 'Back End Developer',
     Location: 'Orlando, FL',
-<<<<<<< HEAD
     Email: 'jobs@githired.com',
     Phone: '451-867-5309'
   },{
@@ -87,60 +76,20 @@ models.sequelize.sync({force: true}).then(function () {
     Location: 'Sacramento, CA ',
     Email: 'jobs@githired.com',
     Phone: '451-867-5309'
-=======
-    Email: 'helloworld@backstreetcoders.com',
-    Phone: '407-246-2356'
-  },{
-    Company: 'Code of Conduct',
-    Position: 'Junior Developer Full Stack',
-    Location: 'Austin, TX',
-    Email: 'hr@codeofconduct.com',
-    Phone: '512-556-0102'
-  }, {
-    Company: 'California Code Rush',
-    Position: 'Full Stack Web Developer',
-    Location: 'Sacramento, CA',
-    Email: 'californiacoderush@gmail.com',
-    Phone: '916-867-5309'
-  }, {
-    Company: 'iCode',
-    Position: 'Coding Mentor',
-    Location: 'Seattle, WA',
-    Email: 'jobs@icode.com',
-    Phone: '206-684-2525'
-  },{
-    Company: 'BGH Inc',
-    Position: 'Front End Developer',
-    Location: 'Las Vegas, NV',
-    Email: 'busyrich@bghinc.com',
-    Phone: '702-229-2299'
->>>>>>> joshua
   },{
     Company: 'Code Blazers',
     Position: 'Senior Web Developer',
     Location: 'Fargo, ND',
-<<<<<<< HEAD
     Email: 'jobs@githired.com',
     Phone: '451-867-5309'
-=======
-    Email: 'emloyment@codeblazers.com',
-    Phone: '701-241-0451'
->>>>>>> joshua
   },{
     Company: 'Code Launchers',
     Position: 'Full Stack Web Developer',
     Location: 'Roanoke, VA',
-<<<<<<< HEAD
     Email: 'jobs@githired.com',
     Phone: '451-867-5309'
   }])
   .then(() => {
-=======
-    Email: 'richard.key@codelaunchers.com',
-    Phone: '540-342-6025'
-  }])
-.then(() => {
->>>>>>> joshua
     models.listings.findAll().then(listings => console.log(listings));
   });
 

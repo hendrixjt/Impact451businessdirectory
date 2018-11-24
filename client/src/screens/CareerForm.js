@@ -180,11 +180,6 @@ class CareerForm extends React.Component {
 
     console.log(this.state);
 
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> joshua
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
       
@@ -192,18 +187,13 @@ class CareerForm extends React.Component {
      }).catch((error)=> {
        console.log("========errorr===>", error.message)
      });
-<<<<<<< HEAD
      this.handleOpenM();
-=======
-    this.handleOpenM();
->>>>>>> joshua
   };
 
   render() {
     const { classes } = this.props;
 
     return (
-<<<<<<< HEAD
       <div className="background_image"
       style={{
           // height: `${window.innerHeight}px`,
@@ -215,10 +205,6 @@ class CareerForm extends React.Component {
       <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
         <h1 style={Header}>Career Services Form</h1>
         <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
-=======
-      <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
-        <h2 style={Header}>Career Services Form</h2>
->>>>>>> joshua
         <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
