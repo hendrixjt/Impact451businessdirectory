@@ -56,38 +56,38 @@ models.sequelize.sync({force: true}).then(function () {
     Company: 'Social Code',
     Position: 'Front End Developer',
     Location: 'Franklin, TN',
-    Email: 'socialcode@gmail.com',
-    Phone: '615-791-0001'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   },{
     Company: 'Backstreet Coders',
     Position: 'Back End Developer',
     Location: 'Orlando, FL',
-    Email: 'helloworld@backstreetcoders.com',
-    Phone: '407-246-2356'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   },{
     Company: 'Code of Conduct',
     Position: 'Junior Developer Full Stack',
     Location: 'Austin, TN',
-    Email: 'hr@codeofconduct.com',
-    Phone: '512-556-0102'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   }, {
     Company: 'California Code Rush',
     Position: 'Full Stack Web Developer',
     Location: 'Sacramento, CA ',
-    Email: 'busyrich@ccr.com',
-    Phone: '916-867-5309'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   },{
     Company: 'Code Blazers',
     Position: 'Senior Web Developer',
     Location: 'Fargo, ND',
-    Email: 'employment@codeblazers.com',
-    Phone: '701-241-0451'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   },{
     Company: 'Code Launchers',
     Position: 'Full Stack Web Developer',
     Location: 'Roanoke, VA',
-    Email: 'richard.key@codelaunchers.com',
-    Phone: '540-342-6025'
+    Email: 'jobs@githired.com',
+    Phone: '451-867-5309'
   }])
   .then(() => {
     models.listings.findAll().then(listings => console.log(listings));
