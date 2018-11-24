@@ -5,10 +5,7 @@ body {
 /* header {
     position: absolute;
 } */
-.JobBoard .header{
-position: absolute;
-margin-top: 107px;
-}
+
 /* 
 .JobBoard button:hover,
 .JobBoard button:active {
@@ -17,68 +14,69 @@ margin-top: 107px;
 } */ */
 
 .intro {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    /* color: white; */
+    font-family: 'Righteous', cursive;
     text-align: center;
+    /* margin-top: 107px; */
 }
 
 .Post {
-    display: inline-block; 
-    flex: 50%;
-    flex-flow: row wrap;
-    justify-items: center;
-    width: 50%;
-    margin:20px auto;
+    justify-content: center;
+    /* display: inline-block; 
+    flex: 50%; */
+    /* flex-flow: row wrap; */
+    background-color: white;
+    width: 40%;
+   
     border-radius: 5px;
-    /* border: 1px solid #eee; */
+    
     border-color: gray;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    /* text-shadow: 0 2px 3px rgb(114, 99, 99); */
-    display: inline-block;
-    position: relative;
-    margin: 20px 10px auto;
-    /* float: center; */
-    /* width: 25%;
-    height: 260px;
-    background-color: white;
-    box-align: center; */
+    /* margin-left: 30%;
+    margin-right: 30%; */
+    
+    margin: auto;
 
       }
  
 .boss {
     color: #FF6363;
+    font-family: 'Righteous', cursive;
 }
 .jobinfo {
     color: gray;
+    font-family: 'Roboto', sans-serif;
 }
 @media (min-width: 576px) {
     .Post {
-        font-size: 1em;
-        /* color: red; */
+        font-size: 3em;
+        
     }
     .intro {
-        font-size: 2em;
+        font-size: 3em;
+        text-align: center;
     }
  }
 
  @media (max-width: 575.98px) {
     .Post {
         font-size: .8em;
-        /* color: orange; */
+        
     }  .intro {
         font-size: 1em;
+        text-align: center;
+
     }
  }
  @media (min-width: 960px) {
     .Post {
-        font-size: 1.2em;
-        /* color: rgb(101, 150, 152); */
+        font-size: 5em;
+       
     }
     .intro {
         font-size: 3em; 
+        text-align: center
     }
  }
  .background_image {
