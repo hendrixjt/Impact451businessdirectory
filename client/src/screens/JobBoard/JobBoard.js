@@ -54,8 +54,7 @@ class JobBoard extends React.Component {
                 {
                    loadedPost.map(post => (
 
-                        <article className="Post" onClick={clicked} key={post.ListingId}>
-                    
+                        <article className="Post" onClick={clicked} key={post.ListingId}>                   
                          <div><h1 className="boss">{post.Company}</h1></div> 
                          <div><p className="jobinfo">{post.Position}</p></div> 
                          <div><p className="jobinfo">{post.Location}</p></div>
