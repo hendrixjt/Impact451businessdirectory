@@ -56,8 +56,12 @@ class JobBoard extends React.Component {
               
             }}
         >
+        <div className="intro"style={{marginTop:107, color: 'white', }}>
+        Current Job Postings!
+        </div>
                 {
                    loadedPost.map(post => (
+<<<<<<< HEAD
 
                         <article className="Post" onClick={clicked} key={post.ListingId}>                   
                           <h1 className="boss">{post.Company}</h1>
@@ -65,6 +69,18 @@ class JobBoard extends React.Component {
                           <p className="jobinfo">{post.Location}</p>
                           <p className="jobinfo">{post.Email}</p>
                          ><p className="jobinfo">{post.Phone}</p> 
+=======
+                        <article className="Post" onClick={clicked} key={post.ListingId}>
+                        
+                        
+                            <h1 className="boss">{post.Company}</h1>
+                            <p className="jobinfo">{post.Position}</p>
+                            <p className="jobinfo">{post.Location}</p>
+                            <p className="jobinfo">{post.Email}</p>
+                            <p className="jobinfo">{post.Phone}</p>
+                            
+                            
+>>>>>>> joshua
                         </article> 
                    )) 
                    
