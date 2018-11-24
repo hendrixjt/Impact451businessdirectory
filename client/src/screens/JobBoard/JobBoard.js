@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 // import Header from '../../components/header_footer/Header';
 import axios from 'axios';
+// import testImg from  '../resources/images/Main.jpg';
 
 import testImg from '../../resources/images/Main.jpg';
 
 import './JobBoard.css';
+
+
+
+
 
 
 class JobBoard extends React.Component {
@@ -70,6 +75,7 @@ class JobBoard extends React.Component {
                    )) 
                    
                 }
+                  
             </div>
            
         )

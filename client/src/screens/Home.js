@@ -1,6 +1,8 @@
 import React from 'react';
 import testImg from  '../resources/images/Main.jpg';
 // import GoogleMaps from '../components/Map';
+import { Link } from 'react-router-dom'
+// import Button from '@material-ui/core/Button';
 
 
 const Home = () => {
@@ -13,20 +15,16 @@ const Home = () => {
             GitHired 
            </div>
            <div className="font_righteous home_subtitle">
-           Revivalist in Tech
+           Revivalists in Tech
 
-           <button type="submit" id="submit"  class="btn btn-lg" >Play Video</button>
+           <button id="submit" href="/">Play Video   </button>
+          
+           <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
             
-            <button type="submit" id="submit"  class="btn btn-lg">Git Started </button>
-           </div>
-           
-
-           
-           
            </div>
           
-            
-           
+           </div>
+          
                         <div
                             className="background_image"
                             style={{
@@ -38,8 +36,40 @@ const Home = () => {
                         <div>
                             {/* <h1>Hello to my wonderful maps!</h1>
                             <GoogleMaps/> */}
+                        {/* > */}
+
+                          
                         </div>
-                        </div>
+                        
+                        
+
+
+    </div>
+
+
+  
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+                       
+    
+                
+                        
                         
                         
                         

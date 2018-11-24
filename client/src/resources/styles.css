@@ -28,6 +28,7 @@ body {
 .center_wrapper {
     width: 900px;
     margin:0 auto;
+    
 }
 a {
     text-decoration: none !important;
@@ -83,18 +84,20 @@ header .header_logo_title {
 /*====================
         FOOTER
 ======================*/
-
 footer {
     padding:10px 0px;
     text-align: center;
-    font-size: 25px;
     color:#ffffff;
     background:  #FF6363;
 }
+.footer .footer_logo{
+    font-size: 25px;
+    
+}
 
-
-footer .footer_copyright {
-    font-size: 12px;
+.social-links {
+    padding: 15px;
+    font-size: 20px;
 }
 .social-links a{
     color: white;
@@ -109,8 +112,9 @@ footer .footer_copyright {
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
   }
-
-
+  footer .footer_copyright {
+    font-size: 12px;
+}
 /*====================
         HOME
 ======================*/
@@ -134,7 +138,7 @@ background-size: contain;
     /* margin: 0_auto; */
     text-align: center;
     color: white;
-    font-size: 54px;
+    font-size: 53px;
     padding: 21px 70px 0px 70px; 
     
   
@@ -164,59 +168,160 @@ background-size: contain;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: lighter;
-    
-  
-    
-    
   }
 
   #submit:hover {
     background-color: transparent;
     color: #FF6363;
+  }
+  a:visited {
+    color: white;
+}
+/*====================
+    Home . ABOUT 
+======================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+
+  .col-sm-6 {
+    width: 50%;
     
+   /* padding-top: 500px */
   }
 
-/*====================
-        Monkey
-======================*/
+
+    .split-pane {
+      /* padding-top: 200px; */
+      height: 50%;
+      min-width: 500px;
+     
+    }
 
 
-
-
-/*====================
-        Gitconnected
-======================*/
-
-.g_wrapper {
-    display: flex;
-    padding: 170px 0px;
+.frontend-side {
+  background-color: #3c3c3c;
+  padding-top: 1em;
+  /* padding-bottom: 70px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50%;
+  min-height: 125px;
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+    font-weight:100;
+   /* max-height: 200px; */
+   float: right;
 }
 
-.g_item {
+.uiux-side {
+  background-color: white ;
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50%;
+  min-height: 125px;
+  font-size: 2em;
+  
+  font-family: 'Open Sans', sans-serif;
+    font-weight:100;
+   /* max-height: 200px; */
+  float: left;
+}
+
+
+
+.split-pane > div {
+  /* position: relative; */
+  margin: 75px 50px 75px 75px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center; 
+  
+   
+} 
+.split-pane > div .text-content {
+  line-height: 1.6em;
+  /* margin-bottom: 1em; */
+  color: #3c3c3c;
+}
+.split-pane > div .text-content .big {
+  font-size: 45px;
+  color: #3c3c3c;
+}
+
+
+.bold {
+    text-transform:uppercase;
+    font-size: 35px;
+}
+
+.about_info {
+    font-size: 14px;
+}
+
+/*====================
+       GitStarted
+======================*/
+
+
+.gitstarted h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color:#dddddd;
+    font-size: 52px;
+    padding: 50px 0px ;
+    font-family: 'Righteous', cursive;
+    /* background: #ffffff */
+ }
+ 
+ .gitstarted_info .steps  {
+    line-height: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    border-top: 150px solid #dddddd;
+    border-bottom: 90px solid #dddddd;
+    padding: 30px 0px;
+    background-color: #dddddd; 
+ }
+ 
+ .gitstarted_l {
+    font-family: 'Righteous', cursive;
+    font-size: 25px
+  }
+  .gs_wrapper {
+    display: flex;
+    padding: 130px 0px;
+ }
+ 
+ .gs_item {
     width:50%;
     color:#ffffff;
     text-align: center;
-}
-                      
-.g_item .g_outer {
+ }
+                     
+ .gs_item .gs_outer {
     width: 300px;
     border: 2px solid #828282;
     margin: auto;
     padding: 5px;
-}
-
-.g_item .g_inner { 
+ }
+ 
+ .gs_item .gs_inner {
     border: 2px solid #828282;
     position: relative;
     padding: 0px 20px;
     transition: all 500ms ease;
-}
-
-.g_item .g_inner:hover {
+ }
+ 
+ .gs_item .gs_inner:hover {
     background: #3e3e3e;
-}
-
-.g_item .g_icon_square {
+ }
+ 
+ .gs_item .gs_icon_square {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -225,9 +330,9 @@ background-size: contain;
     transform: rotate(45deg);
     top: -54px;
     left: 100px;
-}
-
-.g_item .g_icon {
+ }
+ 
+ .gs_item .gs_icon {
     width: 50px;
     height: 50px;
     background-size: contain !important;
@@ -235,17 +340,21 @@ background-size: contain;
     position: absolute;
     top: -30px;
     left: 124px;
-}
-
-.g_item .g_title {
+ }
+ 
+ .gs_item .gs_title {
     font-size: 28px;
     margin: 90px 0px 20px 0px;
     border-bottom: 1px solid #5d5d5d;
     padding-bottom: 10px;
-}
-
-.g_item .g_description {
-    font-size: 30px;
-    font-weight: 300;
+ }
+ 
+ .gs_item .gs_description {
+    font-size: 25px;
+    font-weight: 100; 
     margin-bottom: 90px;
-}
+ }
+ 
+
+
+

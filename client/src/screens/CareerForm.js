@@ -22,6 +22,10 @@ import Checkbox from "@material-ui/core/Checkbox";
 import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
+import red from '@material-ui/core/colors/red';
+import testImg from '../resources/images/Main.jpg';
+
+
 import axios from "axios";
 
 import './CareerForm.css';
@@ -42,11 +46,13 @@ function getModalStyle() {
   };
 }
 
+
+
 const styles = theme => ({
   root: {
-    color: green[600],
+    color: red[600],
     "&$checked": {
-      color: green[500]
+      color: red[500],
     }
   },
   checked: {},
@@ -55,13 +61,21 @@ const styles = theme => ({
     flexWrap: "wrap"
   },
   textField: {
-  marginLeft: theme.spacing.unit,
-  marginRight: theme.spacing.unit,
-   
+  margin: theme.spacing.unit,
+  borderRadius: '5px',
+  },
+  button:{
+    background:"#FF6363",
+    color:"white",
+    marginLeft: theme.spacing.unit,
+    marginTop: '15px',
+    marginBottom: '15px'
   },
   formControl: {
     margin: theme.spacing.unit,
-    minWidth: 120
+    minWidth: 120,
+    background:'white',
+    borderRadius: '5px',
   },
   dense: {
     marginTop: 16
@@ -69,21 +83,23 @@ const styles = theme => ({
   menu: {
     width: 200
   },
-  paperr: {
+  paperr:{
     position: "absolute",
     width: theme.spacing.unit * 50,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing.unit * 4
+    padding: theme.spacing.unit * 4,
+    textAlign: "center"
   }
 });
 
 const Header={
   textAlign: "center",
-  color: "Grey",
-  
-}
+  fontFamily: 'Righteous',
+  color:" #FF6363",
+  // textShadow: "0 2px 3px black",
 
+}
 
 
 class CareerForm extends React.Component {
@@ -102,7 +118,7 @@ class CareerForm extends React.Component {
     message: "",
     multiline: "Flexible",
     shrink: false,
-    value: "female",
+    value: "",
     modal: {
       open: false
     }
@@ -160,28 +176,37 @@ class CareerForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    
 
     console.log(this.state);
 
     
+
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
-      // e.setState({
-      //   messageFromServer: response.data
-      // });
+      
   
      }).catch((error)=> {
        console.log("========errorr===>", error.message)
      });
-    this.handleOpenM();
+     this.handleOpenM();
   };
 
   render() {
     const { classes } = this.props;
 
     return (
+      <div className="background_image"
+      style={{
+          // height: `${window.innerHeight}px`,
+          backgroundImage: `url(${testImg})`,
+          backgroundAttachment: `fixed`
+        
+      }}
+    >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
-        <h2 style={Header}>Career Services Form</h2>
+        <h1 style={Header}>Career Services Form</h1>
+        <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
         <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
@@ -201,22 +226,19 @@ class CareerForm extends React.Component {
               </div>
             </Modal>
 
-            <form autoComplete="off">
-              <Paper className={classes.paper}>
+            <form autoComplete="off">     
                 <TextField
                   id="filled-name-input"
-                  label="Name"
+                  label= "Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{marginLeft: '7px', width:'97%',background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="name"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper item xs={12}>
+              
                 <TextField
                   id="filled-email-input"
                   label="Email"
@@ -224,67 +246,66 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
-                  style={{width:'97%'}}
+                  style={{marginLeft:"7px", width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper className={classes.paper}>
+              
                 <TextField
-                  id="filled-Current Module-input"
+                  id="filled-current module-input"
                   label="Current Module"
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="currentmodule"
                   onChange={this.handleChange}
                 />
-              </Paper>
-
-              <Paper  item xs={12}>
+             
                 <div>
                   <FormControl
                     component="fieldset"
+                    style={{width: '97%', background:"white"}}
                     className={classes.formControl}
                   >
-                    <FormLabel component="legend">
+                    <label component="legend"
+                    style={{color:'grey', marginTop: '7px'}}>
                       Are you willing to relocate?
-                    </FormLabel>
+                    </label>
                     <RadioGroup
                       aria-label="relocate"
                       name="relocate"
                       className={classes.group}
                       value={this.state.relocate}
                       onChange={this.handleChange}
+                      control= {<Radio color='primary'/>}
                     >
                       <FormControlLabel
                         value="Yes"
                         control={<Radio color="primary" />}
                         label="Yes"
-                        labelPlacement="start"
+                        style={{marginLeft: '2px'}}
                       />
                       <FormControlLabel
                         value="No"
                         control={<Radio color="primary" />}
                         label="No"
-                        labelPlacement="start"
+                        style={{marginLeft: '2px'}}
                       />
                     </RadioGroup>
                   </FormControl>
                 </div>
-              </Paper>
-
-              <Paper  item xs={12}>
+            
                 <FormControl
                   component="fieldset"
                   className={classes.formControl}
+                  style={{width:'97%', background:"white"}}
                 >
-                  <FormLabel component="legend">
+                  <label component="legend"
+                  style={{color:'grey', marginTop: '7px'}}>
                     Which path are you enrolled in?:
-                  </FormLabel>
+                  </label>
                   <RadioGroup
                     name="path"
                     value={this.state.path}
@@ -294,36 +315,39 @@ class CareerForm extends React.Component {
                       control={<Radio color="primary" />}
                       value="javascript"
                       label="JavaScript"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="java"
                       label="Java"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="ruby"
                       label="Ruby"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="datascience"
                       label="Data Science"
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="cybersecurity"
                       label="Cyber Security"
+                      style={{marginLeft: '2px'}}
                     />
                   </RadioGroup>
                 </FormControl>
-              </Paper>
-
-              <Paper item xs={12}>
+             
                 <TextField
                   id="filled-multiline-static"
                   label="Additional Information"
@@ -331,30 +355,24 @@ class CareerForm extends React.Component {
                   rows="8"
                   defaultValue=""
                   className={classes.textField}
-                  style={{width:'97%'}}
+                  style={{width:'97%', background:"white"}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChangeC("message")}
                 />
-              </Paper>
-
-              <Paper item xs={12}>
-                <br />
 
                 <Button
                   type="submit"
                   variant="contained"
-                  color="primary"
                   className={classes.button}
                   onClick={this.handleSubmit}
                 >
                   Submit
                 </Button>
-                <br />
-              </Paper>
             </form>
           </Grid>
         </Grid>
+      </div>
       </div>
     );
   }
