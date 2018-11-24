@@ -6,7 +6,6 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
-// import white from '@material-ui/core/colors/white';
 import testImg from '../resources/images/Main.jpg';
 
 const styles = theme => ({
@@ -17,21 +16,18 @@ const styles = theme => ({
   button:{
     background:"#FF6363",
     color:"white",
-    marginLeft: theme.spacing.unit
+    marginLeft: theme.spacing.unit,
+    marginTop: '7px'
   },
   textField: {
     marginLeft: theme.spacing.unit,
     marginRight: theme.spacing.unit,
     width: 200,
     color:"white",
-    // border: '1px solid #ced4da',
     borderRadius: '5px'
   },
   dense: {
     marginTop: 19,
-  },
-  menu: {
-    width: 200,
   },
 });
 const Header={
@@ -68,7 +64,7 @@ class ConnectionForm extends React.Component {
         
       }}
   >
-      <div style={{marginTop: 100, marginRight: 300, marginLeft: 300, marginBottom: 300, }}className={classes.root}>
+      <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
       <h1 style={Header}>Git In Touch</h1>
       <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
        <form>

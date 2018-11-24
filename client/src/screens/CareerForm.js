@@ -52,7 +52,7 @@ const styles = theme => ({
   root: {
     color: red[600],
     "&$checked": {
-      color: red[500]
+      color: red[500],
     }
   },
   checked: {},
@@ -83,6 +83,14 @@ const styles = theme => ({
   menu: {
     width: 200
   },
+  paperr:{
+    position: "absolute",
+    width: theme.spacing.unit * 50,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing.unit * 4,
+    textAlign: "center"
+  }
 });
 
 const Header={
@@ -166,6 +174,7 @@ class CareerForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    
 
     console.log(this.state);
 
@@ -177,6 +186,7 @@ class CareerForm extends React.Component {
      }).catch((error)=> {
        console.log("========errorr===>", error.message)
      });
+     this.handleOpenM();
   };
 
   render() {
@@ -204,11 +214,11 @@ class CareerForm extends React.Component {
             >
               <div style={getModalStyle()} className={classes.paperr}>
                 <Typography variant="title" id="modal-title">
-                  Form successfully submitted :)
+                  Form successfully submitted!
                 </Typography>
                 <Typography variant="subheading" id="simple-modal-description">
-                  <strong>form:</strong> {JSON.stringify(this.state, null, 2)}
-                  )}
+                  {/* <strong>form:</strong> {JSON.stringify(this.state, null, 2)}
+                  )} */}
                 </Typography>
               </div>
             </Modal>
@@ -216,10 +226,10 @@ class CareerForm extends React.Component {
             <form autoComplete="off">     
                 <TextField
                   id="filled-name-input"
-                  label="Name"
+                  label= "Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{width:'97%',background:"white"}}
+                  style={{marginLeft: '7px', width:'97%',background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="name"
@@ -257,7 +267,7 @@ class CareerForm extends React.Component {
                     className={classes.formControl}
                   >
                     <label component="legend"
-                    style={{color:'grey', marginTop: '7px', marginLeft: '5px'}}>
+                    style={{color:'grey', marginTop: '7px'}}>
                       Are you willing to relocate?
                     </label>
                     <RadioGroup
@@ -290,7 +300,7 @@ class CareerForm extends React.Component {
                   style={{width:'97%', background:"white"}}
                 >
                   <label component="legend"
-                  style={{color:'grey', marginTop: '7px', marginLeft: '5px'}}>
+                  style={{color:'grey', marginTop: '7px'}}>
                     Which path are you enrolled in?:
                   </label>
                   <RadioGroup
