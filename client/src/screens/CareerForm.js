@@ -180,6 +180,11 @@ class CareerForm extends React.Component {
 
     console.log(this.state);
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> joshua
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
       
