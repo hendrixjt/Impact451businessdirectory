@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
-import testImg from '../resources/images/Main.jpg';
+import testImg from '../resources/images/chimpanzeePhone1.jpg';
 
 
 const styles = theme => ({
@@ -35,6 +35,7 @@ const Header={
   textAlign: "center",
   fontFamily: 'Righteous',
   color:" #FF6363",
+  fontSize: '4em',
   // textShadow: "0 2px 3px black"
 }
 
@@ -70,9 +71,9 @@ class ConnectionForm extends React.Component {
   >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
       <h1 style={Header}>Git In Touch</h1>
-      <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
+      
 
-       <form>
+       <form style={{marginTop: 240}}>
         <TextField 
           id="outlined-name"
           label="Name"
