@@ -1,63 +1,20 @@
-/* .background-image {
 
-        background-image: url('../../resources/images/Main.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: contain;
-    
-} */
 body {
     margin-top: 107px;
 }
-header {
+/* header {
     position: absolute;
+} */
+.JobBoard .header{
+position: absolute;
+margin-top: 107px;
 }
-
-/* .JobBoard {
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
-    text-align: center;
-    border-radius: 40px
-}
-
-.JobBoard label {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    font-weight: bold;
-}
-
-.JobBoard input,
-.JobBoard textarea,
-.JobBoard select {
-    display: block;
-    width: 80%;
-    box-sizing: border-box;
-    border: 1px solid black;
-    outline: none;
-    font: inherit;
-    margin: auto;
-    border-radius: 40px
-}
-
-.JobBoard button {
-    margin: 5px 0;
-    padding: 10px;
-    font: inherit;
-    border: 1px solid #fa923f;
-    background-color: transparent;
-    color: #fa923f;
-    cursor: pointer;
-    border-radius: 40px
-}
-
+/* 
 .JobBoard button:hover,
 .JobBoard button:active {
     color: white;
     background-color: #fa923f;
-} */
+} */ */
 
 .intro {
     color: white;
@@ -66,9 +23,9 @@ header {
 }
 
 .Post {
-    /* display: inline-block;  */
-    /* flex: 50%; */
-    /* flex-flow: row wrap; */
+    display: inline-block; 
+    flex: 50%;
+    flex-flow: row wrap;
     justify-items: center;
     width: 50%;
     margin:20px auto;
@@ -84,16 +41,13 @@ header {
     position: relative;
     margin: 20px 10px auto;
     /* float: center; */
-    width: 25%;
+    /* width: 25%;
     height: 260px;
     background-color: white;
-    box-align: center;
+    box-align: center; */
 
       }
  
-
-    
-
 .boss {
     color: #FF6363;
 }
@@ -116,9 +70,7 @@ header {
         /* color: orange; */
     }  .intro {
         font-size: 1em;
-        
     }
-
  }
  @media (min-width: 960px) {
     .Post {
@@ -126,15 +78,9 @@ header {
         /* color: rgb(101, 150, 152); */
     }
     .intro {
-        font-size: 3em;
-        
+        font-size: 3em; 
     }
  }
- /* .Post{
-     #h1{
-         Font-color: red;
-     }
- } */
  .background_image {
     background-size: contain;
     }
