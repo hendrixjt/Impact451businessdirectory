@@ -35,15 +35,9 @@ const Home = () => {
                         ></div> 
                         <div>
                             {/* <h1>Hello to my wonderful maps!</h1>
-                            <GoogleMaps/> */}
-                        {/* > */}
-
-                          
-                        </div>
-                        
-                        
-
-
+                            <GoogleMaps/>  */}
+               
+                        </div>        
     </div>
 
 
