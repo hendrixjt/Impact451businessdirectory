@@ -33,8 +33,9 @@ const styles = theme => ({
 });
 const Header={
   textAlign: "center",
+  fontFamily: 'Righteous',
   color:" #FF6363",
-  textShadow: "0 2px 3px black"
+  // textShadow: "0 2px 3px black"
 }
 
 
