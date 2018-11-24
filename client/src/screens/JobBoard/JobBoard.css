@@ -26,13 +26,13 @@ body {
     flex: 50%; */
     /* flex-flow: row wrap; */
     background-color: white;
-    width: 40%;
+    /* width: 40%; */
    
     border-radius: 5px;
     
     border-color: gray;
     box-shadow: 0 2px 3px #ccc;
-    text-align: center;
+    /* text-align: center; */
     /* margin-left: 30%;
     margin-right: 30%; */
     
@@ -50,33 +50,46 @@ body {
 }
 @media (min-width: 576px) {
     .Post {
-        font-size: 3em;
+        font-size: 1.1em;
+        text-align: center;
+        width: 60%;
         
     }
     .intro {
         font-size: 3em;
+        color: white;
         text-align: center;
+        margin-top: 107px;
     }
  }
 
  @media (max-width: 575.98px) {
     .Post {
         font-size: .8em;
+        text-align: center;
+        width: 80%;
+
         
     }  .intro {
         font-size: 1em;
+        color: white;
         text-align: center;
+        margin-top: 107px;
 
     }
  }
  @media (min-width: 960px) {
     .Post {
-        font-size: 5em;
+        font-size: 2em;
+        text-align: center;
+        width: 40%;
        
     }
     .intro {
         font-size: 3em; 
-        text-align: center
+        color: white;
+        text-align: center;
+        margin-top: 107px;
     }
  }
  .background_image {

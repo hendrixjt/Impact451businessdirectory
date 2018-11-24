@@ -56,7 +56,7 @@ class JobBoard extends React.Component {
               
             }}
         >
-        <div className="intro"style={{marginTop:107, color: 'white', }}>
+        <div className="intro">
         Current Job Postings!
         </div>
                 {
