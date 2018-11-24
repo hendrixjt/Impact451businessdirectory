@@ -8,6 +8,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
 import testImg from '../resources/images/Main.jpg';
 
+
 const styles = theme => ({
   container: {
     display: 'flex',
@@ -45,11 +46,13 @@ class ConnectionForm extends React.Component {
     multiline: '',
     
   };
+ 
 
-  handleChange = name => event => {
+   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,
     });
+
   };
 
   render() {
@@ -67,6 +70,7 @@ class ConnectionForm extends React.Component {
       <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
       <h1 style={Header}>Git In Touch</h1>
       <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
+
        <form>
         <TextField 
           id="outlined-name"

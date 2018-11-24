@@ -74,20 +74,8 @@ models.sequelize.sync({force: true}).then(function () {
     Company: 'California Code Rush',
     Position: 'Full Stack Web Developer',
     Location: 'Sacramento, CA ',
-    Email: 'californiacoderush@gmail.com',
+    Email: 'busyrich@ccr.com',
     Phone: '916-867-5309'
-  },{
-    Company: 'iCode',
-    Position: 'Coding Mentor',
-    Location: 'Seattle, WA',
-    Email:'jobs@icode.com',
-    Phone: '206-684-2525'
-  },{
-    Company: 'BGH Inc',
-    Position: 'Front End Developer',
-    Location: 'Las Vegas, NV',
-    Email: 'busyrich@bghinc.com',
-    Phone: '702-229-2299'
   },{
     Company: 'Code Blazers',
     Position: 'Senior Web Developer',

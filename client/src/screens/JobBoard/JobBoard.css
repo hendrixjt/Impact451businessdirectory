@@ -6,12 +6,12 @@
         background-size: contain;
     
 } */
-body {
+/* body {
     margin-top: 107px;
-}
-header {
+} */
+/* header {
     position: absolute;
-}
+} */
 
 /* .JobBoard {
     width: 80%;
@@ -61,28 +61,25 @@ header {
 
 .Post {
     /* display: flex;  */
-    flex: 50%;
-    flex-flow: row wrap;
+    /* flex: 50%;
+    flex-flow: row wrap; */
     justify-content: center;
-     width: 50%;
+     width: 30%;
     margin: 20px auto;
     border-radius: 5px;
     border: 1px solid #eee;
     border-color: gray;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
-    text-shadow: 0 2px 3px rgb(114, 99, 99);
- 
-
-    
-    /* background: white; */
-    
+    /* text-shadow: 0 2px 3px rgb(114, 99, 99); */
+    background: white;
+    padding: 20px;
 }
 .boss {
     color: #FF6363;
 }
 .jobinfo {
-    color: white;
+    color: gray;
 }
 @media (min-width: 576px) {
     .Post {
