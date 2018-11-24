@@ -51,6 +51,9 @@ class JobBoard extends React.Component {
               
             }}
         >
+        <div className="intro">
+        Take a Look at Our Current Job Postings!
+        </div>
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>

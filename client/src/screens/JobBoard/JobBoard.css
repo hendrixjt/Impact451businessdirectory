@@ -59,27 +59,36 @@ header {
     background-color: #fa923f;
 } */
 
+.intro {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 .Post {
     /* display: inline-block;  */
     /* flex: 50%; */
     /* flex-flow: row wrap; */
     justify-items: center;
-    /* width: 50%; */
-    /* margin: 20px auto; */
-    /* border-radius: 5px; */
+    width: 50%;
+    margin:20px auto;
+    border-radius: 5px;
     /* border: 1px solid #eee; */
     border-color: gray;
     box-shadow: 0 2px 3px #ccc;
     text-align: center;
-    text-shadow: 0 2px 3px rgb(114, 99, 99);
-    background-color: #ccc;
+    margin-left: 30%;
+    margin-right: 30%;
+    /* text-shadow: 0 2px 3px rgb(114, 99, 99); */
     display: inline-block;
     position: relative;
     margin: 20px 10px auto;
     /* float: center; */
     width: 25%;
-    height: 400px;
-    background-color: lightgrey;
+    height: 260px;
+    background-color: white;
+    box-align: center;
+
       }
  
 
@@ -89,12 +98,15 @@ header {
     color: #FF6363;
 }
 .jobinfo {
-    color: white;
+    color: gray;
 }
 @media (min-width: 576px) {
     .Post {
         font-size: 1em;
         /* color: red; */
+    }
+    .intro {
+        font-size: 2em;
     }
  }
 
@@ -102,12 +114,20 @@ header {
     .Post {
         font-size: .8em;
         /* color: orange; */
+    }  .intro {
+        font-size: 1em;
+        
     }
+
  }
  @media (min-width: 960px) {
     .Post {
         font-size: 1.2em;
         /* color: rgb(101, 150, 152); */
+    }
+    .intro {
+        font-size: 3em;
+        
     }
  }
  /* .Post{
