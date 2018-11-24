@@ -23,9 +23,9 @@ function App() {
         <div>
         
         <Header>
-        <i class="fa fa-bars fa-3x"></i>
+        <i className="fa fa-bars fa-3x"></i>
         
-        <div class="header-links">
+        <div className="header-links">
         
          
             <li>

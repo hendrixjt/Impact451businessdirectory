@@ -163,7 +163,7 @@ class CareerForm extends React.Component {
 
     console.log(this.state);
 
-    //this.tempState = this.state;
+    
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
       // e.setState({
@@ -173,14 +173,14 @@ class CareerForm extends React.Component {
      }).catch((error)=> {
        console.log("========errorr===>", error.message)
      });
-    // this.handleOpenM();
+    this.handleOpenM();
   };
 
   render() {
     const { classes } = this.props;
 
     return (
-      <div style={{marginTop: 200, marginRight: 100, marginLeft:100, marginBottom:300 }}className={classes.root}>
+      <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
         <h2 style={Header}>Career Services Form</h2>
         <Grid container spacing={75}>
           <Grid item xs={12}>
@@ -192,11 +192,11 @@ class CareerForm extends React.Component {
             >
               <div style={getModalStyle()} className={classes.paperr}>
                 <Typography variant="title" id="modal-title">
-                  Form successfully submitted :)
+                  Form successfully submitted!
                 </Typography>
                 <Typography variant="subheading" id="simple-modal-description">
-                  <strong>form:</strong> {JSON.stringify(this.state, null, 2)}
-                  )}
+                  {/* <strong>form:</strong> {JSON.stringify(this.state, null, 2)}
+                  )} */}
                 </Typography>
               </div>
             </Modal>
