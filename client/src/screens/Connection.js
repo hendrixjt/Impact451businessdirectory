@@ -35,7 +35,7 @@ const Header={
   textAlign: "center",
   fontFamily: 'Righteous',
   color:" #FF6363",
-  fontSize: '4em',
+  fontSize: '2em',
   // textShadow: "0 2px 3px black"
 }
 
@@ -71,9 +71,8 @@ class ConnectionForm extends React.Component {
   >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
       <h1 style={Header}>GitinTouch</h1>
-      
 
-       <form style={{marginTop: 240}}>
+       <form style={{marginTop: 260}}>
         <TextField 
           id="outlined-name"
           label="Name"
@@ -118,6 +117,7 @@ class ConnectionForm extends React.Component {
          </Button>  
 
       </form>
+  
       
       </div>
       </div>
