@@ -8,10 +8,6 @@ import testImg from '../../resources/images/chimp_Desk1.jpg';
 import './JobBoard.css';
 
 
-
-
-
-
 class JobBoard extends React.Component {
     constructor(props) {
         super(props);
@@ -32,7 +28,7 @@ class JobBoard extends React.Component {
             .catch(err => {
                 console.log(err, 'something wrong occurred')
             })
-    }
+        }
     render() {
         const { clicked, title } = this.props;
         const { isLoading, loadedPost } = this.state;
@@ -54,8 +50,8 @@ class JobBoard extends React.Component {
                 backgroundImage: `url(${testImg})`,
                 backgroundAttachment: `fixed`
               
-            }}
-        >
+                }}
+            >
         <div className="intro">
         Current Job Postings!
         </div>
@@ -63,14 +59,12 @@ class JobBoard extends React.Component {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>
                         
-                        
                             <h1 className="boss">{post.Company}</h1>
                             <p className="jobinfo">{post.Position}</p>
                             <p className="jobinfo">{post.Location}</p>
                             <p className="jobinfo">{post.Email}</p>
                             <p className="jobinfo">{post.Phone}</p>
-                            
-                            
+                                 
                         </article> 
                    )) 
                    
