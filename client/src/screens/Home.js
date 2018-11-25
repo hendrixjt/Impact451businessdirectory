@@ -47,7 +47,7 @@ const Home = () => {
 
            <button id="submit" href="/">Play Video   </button>
           
-           <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
+         
 
  {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
            {/* <button id="submit" href="/">Play Video   </button> */}
@@ -69,17 +69,20 @@ const Home = () => {
                                 backgroundImage: `url(${testImg})`   
                             }}
                         ></div> 
-                        <div className="video-wrapper">
+
+
+                        {/* <div className="video-wrapper">
                            <div className="video-wrapper iframe">
                             <Video />
                            </div>
-                        </div>
-                        // <div className="video-wrapper2">
-                        //    <div className="video-wrapper2 iframe">
-                        //     <Video2 />
-                        //    </div>
-                        // </div>
-            </div>
+                        </div> */}
+
+                          <div className="video-wrapper2">
+                            <div className="video-wrapper2 iframe">
+                             <Video2 />
+                            </div>
+                          </div>
+        </div>
         
       
                          
