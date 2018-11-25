@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import testImg from  '../resources/images/Main.jpg';
 
-import testImg from '../../resources/images/Main.jpg';
+import testImg from '../../resources/images/chimp_Desk1.jpg';
 
 import './JobBoard.css';
 
