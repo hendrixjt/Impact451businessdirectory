@@ -70,7 +70,7 @@ class ConnectionForm extends React.Component {
   >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
       <h1 style={Header}>Git In Touch</h1>
-      <h3 style={Header}>We'd love to hear form you. Send us a message and we'll respond as soon as possible.</h3>
+      <h3 style={Header}>Send us a message!</h3>
 
        <form>
         <TextField 
