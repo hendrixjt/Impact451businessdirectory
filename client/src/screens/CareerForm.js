@@ -46,8 +46,6 @@ function getModalStyle() {
   };
 }
 
-
-
 const styles = theme => ({
   root: {
     color: red[600],
@@ -177,7 +175,8 @@ class CareerForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    
+  
+  
 
     console.log(this.state);
 
@@ -205,7 +204,7 @@ class CareerForm extends React.Component {
     >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
         {/* <h1 style={Header}>Career Services Form</h1> */}
-        <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
+        <h3 style={Header}>Please submit before contacting Career Services.</h3>
         <Grid container spacing={75}>
           <Grid item xs={12}>
             <Modal
