@@ -79,7 +79,7 @@ class ConnectionForm extends React.Component {
           className={classes.textField}
           value={this.state.name}
           onChange={this.handleChange('name')}
-          style={{width:'97%', background:"white"}}
+          style={{width:'97%', background:"white",opacity:'.8'}}
           margin="normal"
           textAlign="center"
         />
@@ -90,7 +90,7 @@ class ConnectionForm extends React.Component {
           className={classes.textField}
           value={this.state.email}
           onChange={this.handleChange('email')}
-          style={{width:'97%', background:"white"}}
+          style={{width:'97%', background:"white",opacity:'.8'}}
           margin="normal"
         />
   
@@ -102,7 +102,7 @@ class ConnectionForm extends React.Component {
           value={this.state.message}
           onChange={this.handleChange('message')}
           className={classes.textField}
-          style={{width: "97%", background:"white"}}
+          style={{width: "97%", background:"white",opacity:'.8'}}
           margin="normal"
         />
 
