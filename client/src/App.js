@@ -40,7 +40,7 @@ function App() {
           </li>
         <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
             <li>
-        <Link className="nav-button" to="/connection">GitConnected</Link>
+        <Link className="nav-button" to="/connection">GitinTouch</Link>
             </li>
 
         </div>

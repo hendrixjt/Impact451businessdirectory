@@ -26,6 +26,8 @@ body {
     flex: 50%; */
     /* flex-flow: row wrap; */
     background-color: white;
+    opacity: .8;
+
     /* width: 40%; */
    
     border-radius: 5px;
@@ -57,9 +59,11 @@ body {
     }
     .intro {
         font-size: 3em;
-        color: white;
+        color: gray;
         text-align: center;
         margin-top: 107px;
+        font-family: 'Righteous', cursive;
+
     }
  }
 
@@ -72,9 +76,10 @@ body {
         
     }  .intro {
         font-size: 1em;
-        color: white;
+        color: black;
         text-align: center;
         margin-top: 107px;
+        font-family: 'Righteous', cursive;
 
     }
  }
@@ -87,9 +92,10 @@ body {
     }
     .intro {
         font-size: 3em; 
-        color: white;
+        color: gray;
         text-align: center;
         margin-top: 107px;
+        font-family: 'Righteous', cursive;
     }
  }
  .background_image {

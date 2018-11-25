@@ -23,7 +23,7 @@ import FormGroup from "@material-ui/core/FormGroup";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import red from '@material-ui/core/colors/red';
-import testImg from '../resources/images/Main.jpg';
+import testImg from '../resources/images/Chimpanzee_Photo2.jpg';
 
 
 import axios from "axios";
@@ -97,6 +97,7 @@ const Header={
   textAlign: "center",
   fontFamily: 'Righteous',
   color:" #FF6363",
+  fontSize: '2em',
   // textShadow: "0 2px 3px black",
 
 }
@@ -205,7 +206,7 @@ class CareerForm extends React.Component {
       }}
     >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft:'20%', marginBottom:0 }}className={classes.root}>
-        <h1 style={Header}>Career Services Form</h1>
+        {/* <h1 style={Header}>Career Services Form</h1> */}
         <h3 style={Header}>Please submit form  before contacting your Career Services Representative.</h3>
         <Grid container spacing={75}>
           <Grid item xs={12}>
@@ -232,7 +233,7 @@ class CareerForm extends React.Component {
                   label= "Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{marginLeft: '7px', width:'97%',background:"white"}}
+                  style={{marginTop: 300,marginLeft: '7px', width:'97%',background:"white"}}
                   margin="normal"
                   variant="filled"
                   name="name"

@@ -70,7 +70,7 @@ class ConnectionForm extends React.Component {
       }}
   >
       <div style={{marginTop: 100, marginRight: '20%', marginLeft: '20%', marginBottom: 0, }}className={classes.root}>
-      <h1 style={Header}>Git In Touch</h1>
+      <h1 style={Header}>GitinTouch</h1>
       
 
        <form style={{marginTop: 240}}>
