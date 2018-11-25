@@ -18,6 +18,7 @@
     "mysql2": "^1.6.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-modal-video": "^1.2.1",
     "react-native-video": "^3.2.1",
     "react-player": "^1.7.0",
     "react-plyr": "^2.1.1",
@@ -25,6 +26,7 @@
     "redux": "^4.0.1",
     "sequelize": "^4.41.0",
     "sequelize-cli": "^5.2.0",
+    "venobox": "^1.8.5",
     "video-react": "^0.13.1"
   },
   "devDependencies": {

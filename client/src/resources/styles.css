@@ -344,19 +344,12 @@ background-size: contain;
 }
  /* //video// */
 
- .player-wrapper {
+ /* .player-wrapper2 {
      position: absolute;
-     top:50px;
-     left:20px;
+     top:480px;
+     left:1195px;
      padding-top: 25%;
      width: 100%;
-     height: 100%;
- }
- }
- 
-/*====================
-       MEDIA QUERIES
-======================*/
 /* Ipad */
  @media screen and (max-width: 768px){
 
@@ -421,11 +414,70 @@ text-align: center;
 }  
 
 }
+=======
+     height: 100%; */
+ /* } */
 
- .react-player {
-     position: relative;
-     width: 800px;
-     height: 600px;
+ /* .react-player2 {
+     position: relative; */
+     /* width: 800px; */
+     /* height: 600px; */
+
+     /* .player-wrapper2 {
+        position: Relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        /* padding-top: 25px;
+        height: 0;
+    /* } */ 
+    /* .react-player2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }      */
      
-     
- }
+    /* .js-video {
+        height: 0;
+        padding-top: 25px;
+        padding-bottom: 67.5%;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+       
+      .js-video.widescreen {
+        padding-bottom: 56.34%;
+      }
+       
+      .js-video.vimeo {
+        padding-top: 0;
+      } */
+      .video-wrapper { 
+        height: 0;
+        padding-bottom: 25%;
+        position: relative;
+      }
+      .video-wrapper iframe {
+        position: absolute;   
+        top: 0px;
+        left: -30px;
+        right: 200px;
+        bottom: 200px;
+        max-width: 50%;
+        margin:0;
+        padding-left:0;
+      }     
+      .video-wrapper2 { 
+        height: 0;
+        padding-bottom: 25%;
+        position: relative;
+      }
+      .video-wrapper2 iframe {
+        position: absolute;   
+        top: -29px;
+        left: -30px;
+        right: 100px;
+        bottom:0px;
+        max-width: 50%;
+      }
