@@ -52,8 +52,9 @@ class Header extends Component {
                         <Monkey
                             link={true}
                             linkTo="/"
-                            width="100x"
+                            width="300px"
                             height="80px"
+                            float="left"
                             
                     />
                 
@@ -62,7 +63,7 @@ class Header extends Component {
                
 
 
-               <div className="header_labels">{this.props.children}</div>
+               <div className="header_links">{this.props.children}</div>
                
                </Toolbar>
                

@@ -23,7 +23,7 @@ function App() {
         <div>
         
         <Header>
-        <i class="fa fa-bars fa-3x"></i>
+        {/* <i class="fa fa-bars fa-3x"></i> */}
         
         <div class="header-links">
         
@@ -37,7 +37,9 @@ function App() {
            <li> 
         <Link className="nav-button" to="/jobBoard">GitSearching</Link>
           </li>
+          <li>
         <Link className="nav-button" to="/careerForm">GitCareerForm</Link>
+            </li>
             <li>
         <Link className="nav-button" to="/connection">GitConnected</Link>
             </li>

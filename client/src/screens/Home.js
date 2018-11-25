@@ -40,22 +40,14 @@ const Home = () => {
            <div className="font_righteous home_subtitle">
            Revivalists in Tech
 
-
- {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
            <button id="submit" href="/">Play Video   </button>
-           
-
-            <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
+          
+           <button id="submit"> <Link className="submit" to="/gitStarted">GitStarted</Link> </button>
             
            </div>
           
-          
-           
-           
            </div>
           
-            
-           
                         <div
                             className="background_image"
                             style={{
