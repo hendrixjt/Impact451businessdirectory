@@ -35,7 +35,7 @@ const Header={
   textAlign: "center",
   fontFamily: 'Righteous',
   color:" #FF6363",
-  fontSize: '4em',
+  fontSize: '2em',
   // textShadow: "0 2px 3px black"
 }
 
