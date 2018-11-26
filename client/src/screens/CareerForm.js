@@ -231,7 +231,7 @@ class CareerForm extends React.Component {
                   label= "Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{marginTop: 270,marginLeft: '7px', width:'97%',background:"white", opacity:'.8'}}
+                  style={{marginTop: 75, marginLeft: '7px', width:'97%',background:"white", opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   name="name"
@@ -245,7 +245,7 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
-                  style={{marginLeft:"7px", width:'97%', background:"white",opacity:'.8'}}
+                  style={{marginLeft:"7px", width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
@@ -255,7 +255,7 @@ class CareerForm extends React.Component {
                   id="filled-current module-input"
                   label="Current Module"
                   className={classes.textField}
-                  style={{width:'97%', background:"white",opacity:'.8'}}
+                  style={{width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   name="currentmodule"
@@ -265,11 +265,11 @@ class CareerForm extends React.Component {
                 <div>
                   <FormControl
                     component="fieldset"
-                    style={{width: '97%', background:"white", opacity:'.8'}}
+                    style={{width: '97%', background:"white", opacity:'.7'}}
                     className={classes.formControl}
                   >
                     <label component="legend"
-                    style={{color:'grey', marginTop: '7px', opacity:'.8'}}>
+                    style={{color:'grey', marginTop: '7px'}}>
                       Are you willing to relocate?
                     </label>
                     <RadioGroup
@@ -284,13 +284,13 @@ class CareerForm extends React.Component {
                         value="Yes"
                         control={<Radio color="primary" />}
                         label="Yes"
-                        style={{marginLeft: '2px',opacity:'.8'}}
+                        style={{marginLeft: '2px'}}
                       />
                       <FormControlLabel
                         value="No"
                         control={<Radio color="primary" />}
                         label="No"
-                        style={{marginLeft: '2px',opacity:'.8'}}
+                        style={{marginLeft: '2px'}}
                       />
                     </RadioGroup>
                   </FormControl>
@@ -299,10 +299,10 @@ class CareerForm extends React.Component {
                 <FormControl
                   component="fieldset"
                   className={classes.formControl}
-                  style={{width:'97%', background:"white",opacity:'.8'}}
+                  style={{width:'97%', background:"white",opacity:'.6'}}
                 >
                   <label component="legend"
-                  style={{color:'grey', marginTop: '7px',opacity:'.8'}}>
+                  style={{color:'grey', marginTop: '7px'}}>
                     Which path are you enrolled in?:
                   </label>
                   <RadioGroup
@@ -314,35 +314,35 @@ class CareerForm extends React.Component {
                       control={<Radio color="primary" />}
                       value="javascript"
                       label="JavaScript"
-                      style={{marginLeft: '2px',opacity:'.8'}}
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="java"
                       label="Java"
-                      style={{marginLeft: '2px',opacity:'.8'}}
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="ruby"
                       label="Ruby"
-                      style={{marginLeft: '2px',opacity:'.8'}}
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="datascience"
                       label="Data Science"
-                      style={{marginLeft: '2px',opacity:'.8'}}
+                      style={{marginLeft: '2px'}}
                     />
 
                     <FormControlLabel
                       control={<Radio color="primary" />}
                       value="cybersecurity"
                       label="Cyber Security"
-                      style={{marginLeft: '2px',opacity:'.8'}}
+                      style={{marginLeft: '2px'}}
                     />
                   </RadioGroup>
                 </FormControl>
@@ -354,7 +354,7 @@ class CareerForm extends React.Component {
                   rows="8"
                   defaultValue=""
                   className={classes.textField}
-                  style={{width:'97%', background:"white",opacity:'.8'}}
+                  style={{width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChangeC("message")}
