@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 // import React, {Component} from 'react';
 import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
 
@@ -10,9 +10,8 @@ import Home from './screens/Home';
 import GitStarted from './screens/Gitstarted';
 import JobBoard from './screens/JobBoard/JobBoard';
 import CareerForm from './screens/CareerForm';
-import Connection from './screens/Connection';
+// import Connection from './screens/Connection';
 
-import ReactYouTubeExample from './screens/Connection';
 
 
 import './resources/styles.css';
@@ -52,7 +51,7 @@ function App() {
           <Route path="/gitStarted" exact="true" component={GitStarted} /> 
           <Route path="/jobBoard" exact="true" component={JobBoard} />
           <Route path="/careerForm" exact="true" component={CareerForm} />
-          <Route path="/connection" exact="true" component={Connection} />
+          {/* <Route path="/connection" exact="true" component={Connection} /> */}
         </Switch>
        
         <Footer/>
@@ -63,7 +62,6 @@ function App() {
     
   );
 }
-
 
 
 export default App;
