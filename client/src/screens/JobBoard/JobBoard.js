@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 // import testImg from  '../resources/images/Main.jpg';
 
+import testImg from '../../resources/images/chimp_Desk1.jpg';
+
 import './JobBoard.css';
 
 
@@ -36,6 +38,7 @@ class JobBoard extends React.Component {
         const { isLoading, loadedPost } = this.state;
         if(isLoading) {
             return (
+                
                 <h3>Loading...</h3>
             )
         }
@@ -45,19 +48,36 @@ class JobBoard extends React.Component {
             )
         }
         return (
-            <div>
-                    
+            <div className="background_image"
+            style={{
+                // height: `${window.innerHeight}px`,
+                backgroundImage: `url(${testImg})`,
+                backgroundAttachment: `fixed`
+              
+            }}
+        >
+        <div className="intro">
+        Current Job Postings!
+        </div>
                 {
                    loadedPost.map(post => (
                         <article className="Post" onClick={clicked} key={post.ListingId}>
-                            <h1>{post.Company}</h1>
-                            <p>{post.Position}</p>
-                            <p>{post.Location}</p>
+                        
+                        
+                            <h1 className="boss">{post.Company}</h1>
+                            <p className="jobinfo">{post.Position}</p>
+                            <p className="jobinfo">{post.Location}</p>
+                            <p className="jobinfo">{post.Email}</p>
+                            <p className="jobinfo">{post.Phone}</p>
+                            
+                            
                         </article> 
                    )) 
+                   
                 }
                   
             </div>
+           
         )
     }
 }
