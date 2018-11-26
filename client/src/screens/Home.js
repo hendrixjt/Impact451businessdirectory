@@ -3,7 +3,7 @@ import testImg from  '../resources/images/Main.jpg';
 // import ModalVideo from '../components/ModalVideo';
 
 import ReactPlayer from 'react-player';
-import Video from '../components/Video';
+// import Video from '../components/Video';
 import Video2 from '../components/Video2';
 // import BackgroundVideo from '../components/BackgroundVideo';
 
@@ -45,8 +45,8 @@ const Home = () => {
            <div className="font_righteous home_subtitle">
            Revivalists in Tech
 
-           <button id="submit" href="/">Play Video   </button>
-          
+           {/* <button id="submit" href="/">Play Video   </button>
+           */}
          
 
  {/* <Button href="/jobBoard" className={classes.button}>Link</Button> */}
