@@ -46,8 +46,6 @@ function getModalStyle() {
   };
 }
 
-
-
 const styles = theme => ({
   root: {
     color: red[600],
@@ -124,6 +122,7 @@ class CareerForm extends React.Component {
       open: false
     }
   };
+ 
   tempState = {};
 
   handleOpenM = () => {
@@ -177,11 +176,10 @@ class CareerForm extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    
+  
+  
 
     console.log(this.state);
-
-    
 
     axios.post('/users', this.state).then(function (response) {
       console.log("===response=======>", response)
@@ -233,7 +231,7 @@ class CareerForm extends React.Component {
                   label= "Name"
                   Placeholder="Name"
                   className={classes.textField}
-                  style={{marginTop: 300,marginLeft: '7px', width:'97%',background:"white"}}
+                  style={{marginTop: 75, marginLeft: '7px', width:'97%',background:"white", opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   name="name"
@@ -247,7 +245,7 @@ class CareerForm extends React.Component {
                   type="email"
                   name="email"
                   autoComplete="email"
-                  style={{marginLeft:"7px", width:'97%', background:"white"}}
+                  style={{marginLeft:"7px", width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChange}
@@ -257,7 +255,7 @@ class CareerForm extends React.Component {
                   id="filled-current module-input"
                   label="Current Module"
                   className={classes.textField}
-                  style={{width:'97%', background:"white"}}
+                  style={{width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   name="currentmodule"
@@ -267,7 +265,7 @@ class CareerForm extends React.Component {
                 <div>
                   <FormControl
                     component="fieldset"
-                    style={{width: '97%', background:"white"}}
+                    style={{width: '97%', background:"white", opacity:'.7'}}
                     className={classes.formControl}
                   >
                     <label component="legend"
@@ -301,7 +299,7 @@ class CareerForm extends React.Component {
                 <FormControl
                   component="fieldset"
                   className={classes.formControl}
-                  style={{width:'97%', background:"white"}}
+                  style={{width:'97%', background:"white",opacity:'.6'}}
                 >
                   <label component="legend"
                   style={{color:'grey', marginTop: '7px'}}>
@@ -356,7 +354,7 @@ class CareerForm extends React.Component {
                   rows="8"
                   defaultValue=""
                   className={classes.textField}
-                  style={{width:'97%', background:"white"}}
+                  style={{width:'97%', background:"white",opacity:'.7'}}
                   margin="normal"
                   variant="filled"
                   onChange={this.handleChangeC("message")}

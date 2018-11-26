@@ -1,7 +1,7 @@
 import React from 'react';
 import icon_calendar from '../resources/images/icons/calendar.png';
 import testImg from  '../resources/images/Main.jpg';
-
+import { Link } from 'react-router-dom'
 
 const Gitstarted = () => {
   
@@ -45,11 +45,13 @@ const Gitstarted = () => {
                                 </div>
                                 <div className="gs_description">
                                 Attend the Next Career Services Workshop
+
                                </div>
+                               <button id="submit"> <Link className="submit" to="https://calendly.com/andrew-careerservices">Schedule Now</Link> </button>
                             </div>
                             </div>
                         </div>
-     
+                                   
 
 
                         <div className="gs_item">
@@ -68,6 +70,7 @@ const Gitstarted = () => {
                                 <div className="gs_description">
                                 Plan and Discuss Employment Goals
                                </div>
+                               <button id="submit"> <Link className="submit" to="https://calendly.com/andrew-careerservices">Schedule Now</Link> </button>
                             </div>
                             </div>
                         </div>
