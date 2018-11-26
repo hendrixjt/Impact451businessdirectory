@@ -55,11 +55,11 @@ const Home = () => {
                                 backgroundImage: `url(${testImg})`   
                             }}
                         ></div> 
-                        <div className="player-wrapper">
+                        {/* <div className="player-wrapper">
                            <div className="react-player">
                             <Video />
                            </div>
-                        </div>
+                        </div> */}
             </div>
         
       
