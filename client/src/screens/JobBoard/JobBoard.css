@@ -1,57 +1,103 @@
-.JobBoard {
-    width: 80%;
-    margin: 20px auto;
-    border: 1px solid #eee;
-    box-shadow: 0 2px 3px #ccc;
-    text-align: center;
-    border-radius: 40px
-}
 
-.JobBoard label {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    font-weight: bold;
+body {
+    margin-top: 107px;
 }
+/* header {
+    position: absolute;
+} */
 
-.JobBoard input,
-.JobBoard textarea,
-.JobBoard select {
-    display: block;
-    width: 80%;
-    box-sizing: border-box;
-    border: 1px solid black;
-    outline: none;
-    font: inherit;
-    margin: auto;
-    border-radius: 40px
-}
-
-.JobBoard button {
-    margin: 5px 0;
-    padding: 10px;
-    font: inherit;
-    border: 1px solid #fa923f;
-    background-color: transparent;
-    color: #fa923f;
-    cursor: pointer;
-    border-radius: 40px
-}
-
+/* 
 .JobBoard button:hover,
 .JobBoard button:active {
     color: white;
     background-color: #fa923f;
+} */ */
+
+.intro {
+    /* color: white; */
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    /* margin-top: 107px; */
 }
 
 .Post {
-    /* display: flex; */
-    flex-flow: row wrap;
     justify-content: center;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 40px;
-    border: 1px solid #eee;
+    /* display: inline-block; 
+    flex: 50%; */
+    /* flex-flow: row wrap; */
+    background-color: white;
+    opacity: .7;
+
+    /* width: 40%; */
+   
+    border-radius: 5px;
+    
+    border-color: gray;
     box-shadow: 0 2px 3px #ccc;
-    text-align: center;
+    /* text-align: center; */
+    /* margin-left: 30%;
+    margin-right: 30%; */
+    
+    margin: auto;
+
+      }
+ 
+.boss {
+    color: #FF6363;
+    font-family: 'Righteous', cursive;
 }
+.jobinfo {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 576px) {
+    .Post {
+        font-size: 1.1em;
+        text-align: center;
+        width: 60%;
+        
+    }
+    .intro {
+        font-size: 3em;
+        color: gray;
+        text-align: center;
+        margin-top: 107px;
+        font-family: 'Righteous', cursive;
+
+    }
+ }
+
+ @media (max-width: 575.98px) {
+    .Post {
+        font-size: .8em;
+        text-align: center;
+        width: 80%;
+
+        
+    }  .intro {
+        font-size: 1.2em;
+        color: black;
+        text-align: center;
+        margin-top: 107px;
+        font-family: 'Righteous', cursive;
+
+    }
+ }
+ @media (min-width: 960px) {
+    .Post {
+        font-size: 1.3em;
+        text-align: center;
+        width: 40%;
+       
+    }
+    .intro {
+        font-size: 3em; 
+        color: gray;
+        text-align: center;
+        margin-top: 107px;
+        font-family: 'Righteous', cursive;
+    }
+ }
+ .background_image {
+    background-size: contain;
+    }

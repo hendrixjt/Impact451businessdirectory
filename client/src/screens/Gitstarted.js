@@ -47,7 +47,7 @@ const Gitstarted = () => {
                                 Attend the Next Career Services Workshop
 
                                </div>
-                               <button id="submit"> <Link className="submit" to="https://www.calendly.com">Go To Calendar</Link> </button>
+                               <button id="submit"> <Link className="submit" to="https://calendly.com/andrew-careerservices">Schedule Now</Link> </button>
                             </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const Gitstarted = () => {
                                 <div className="gs_description">
                                 Plan and Discuss Employment Goals
                                </div>
-                               <button id="submit"> <Link className="submit" to="https://calendly.com/githired">Schedule Now</Link> </button>
+                               <button id="submit"> <Link className="submit" to="https://calendly.com/andrew-careerservices">Schedule Now</Link> </button>
                             </div>
                         </div>
                     </div>
