@@ -52,8 +52,8 @@ class Header extends Component {
                         <Monkey
                             link={true}
                             linkTo="/"
-                            width="300px"
-                            height="80px"
+                            width="420px"
+                            height="95px"
                             float="left"
                             
                     />
