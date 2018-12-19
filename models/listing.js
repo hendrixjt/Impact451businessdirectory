@@ -10,8 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         Company: DataTypes.STRING,
         Position: DataTypes.STRING,
         Location: DataTypes.STRING,
-        Email: DataTypes.STRING,
-        Phone: DataTypes.STRING,
+        
       },
     );
     return listings;
