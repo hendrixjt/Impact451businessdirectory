@@ -15,6 +15,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-google-maps": "^9.4.5",
+    "react-modal-video": "^1.2.1",
     "react-move": "^2.7.0",
     "react-player": "^1.7.0",
     "react-reveal": "^1.2.2",

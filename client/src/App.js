@@ -23,7 +23,7 @@ function App() {
         <div>
         
         <Header>
-        {/* <i class="fa fa-bars fa-3x"></i> */}
+       
         
         <div className="header-links">
         
