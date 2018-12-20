@@ -57,7 +57,7 @@ const Gitstarted = () => {
 
                                </div>
                               
-                               <button id="submit"> <Link className="submit" to="/careerForm">GitStarted</Link> </button>
+                               <button id="submit"> <Link className="submit" to="/careerForm">Career Form</Link> </button>
                                
                             
                             </div>
