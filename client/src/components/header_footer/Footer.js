@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-// import { Monkey }  from '../Ui/Monkey';
+
 
 const Footer = () => {
     return (

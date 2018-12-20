@@ -13,8 +13,9 @@ class Video2 extends Component {
             url= "https://player.vimeo.com/video/301570820"
             className='react-player'
            preload 
-            width="560"
-            height="349"
+            width="50%"
+            height=""
+            
           />
         </div>
       );
