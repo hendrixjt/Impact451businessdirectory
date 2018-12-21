@@ -13,14 +13,33 @@ const Gitstarted = () => {
         
        
         <div className="gitstarted_info">
-        
-
+          
        
-      
+
+     
        <div className="steps">
+       <div class="aboutleft">
+<div class='split-pane col-xs-12 col-sm-6 uiux-side2'>
+ <div>
+ 
+   <div class='text-content'>
+   <div className="video-wrapper iframe">
+                             <Video />
+                            </div>      
+                            <h2><span class="gitstarted_l">GitHired</span></h2>
+   <p><span class="gitstarted_l"></span> It's as easy as 1, 2, 3</p>      
+     
+   </div>
+   
   
-   <h2>GitStarted</h2>
-   <p><span class="gitstarted_l">GitHired.</span> It's as easy as 1, 2, 3.</p>
+
+ </div>
+</div>
+</div>   
+
+
+
+   
  
 
    </div>
@@ -115,11 +134,7 @@ const Gitstarted = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="video-wrapper">
-                                <div className="video-wrapper iframe">
-                                  <Video />
-                                  </div>
-                              </div> 
+                    
                     </div>
                     </div> 
                    </div>
