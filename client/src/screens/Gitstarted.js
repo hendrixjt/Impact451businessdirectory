@@ -115,11 +115,11 @@ const Gitstarted = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="video-wrapper">
+                    {/* <div className="video-wrapper">
                                 <div className="video-wrapper iframe">
                                   <Video />
                                   </div>
-                              </div> 
+                              </div>  */}
                     </div>
                     </div> 
                    </div>
